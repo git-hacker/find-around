@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<picker id="pic" mode="selector" class="pic" class="" range="{{mylist}}" value="{{index}}" range-key="{{'name'}}" bindchange="bindchange">
+   <view class="">分类:{{mylist[index].name}}</view>
+</picker>
+<view class="big">
+<map id="map" controls="{{controls}}" longitude="{{longitude}}" bindcontroltap="controltap" bindchange="mapbindChange" scale="{{scale}}" latitude="{{latitude}}" show-location bindregionchange="regionchange" markers="{{shoplist}}" bindmarkertap="markertap"/>
+</view>

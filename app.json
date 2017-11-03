@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#49AFFF",
+    "navigationBarTitleText": "众享通赢",
+    "navigationBarTextStyle":"white"
+  }
+}
