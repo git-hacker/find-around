@@ -1,12 +1,13 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/vice/vice",
+    "pages/addnew/addnew",
+    "pages/map/map"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#49AFFF",
-    "navigationBarTitleText": "众享通赢",
+    "navigationBarBackgroundColor": "#1AAD19",
+    "navigationBarTitleText": "找周边",
     "navigationBarTextStyle":"white"
   }
 }

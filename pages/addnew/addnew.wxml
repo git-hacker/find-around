@@ -1,0 +1,50 @@
+<view class="content">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">关键词</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入关键词"/>
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="getlocation">
+        <view class="weui-cell__hd">坐标地点</view>    
+        <view class="weui-cell__bd"></view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="备注信息（可填）" />
+        </view>
+    </view>
+
+    <radio-group bindchange="radioChange">
+      <label class="weui-cell weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+        <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__bd">{{item.name}}</view>
+        <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+            <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+        </view>
+      </label>
+    </radio-group>
+
+    <view class="weui-cell">
+      <view class="imagearea" wx:for="{{imgUrls}}" wx:for-item="obj" wx:for-index="ind">
+        <image src="/pages/images/clear.png" class="clear" bindtap='removeimg' data-index="{{ind}}"></image>        
+        <image src='{{obj}}'></image>
+      </view>
+      <view class="uploadarea" bindtap='choseimg'>
+      </view>
+    </view>
+    
+  </view>
+
+  
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" bindtap="showTopTips">确定</button>
+  </view>
+
+</view>

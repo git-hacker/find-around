@@ -1,0 +1,5 @@
+<map>
+  <cover-view>
+    <cover-image src="/img/1.png" class="addnew" bindtap='navto'></cover-image>
+  </cover-view>
+</map>

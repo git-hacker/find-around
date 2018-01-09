@@ -1,0 +1,78 @@
+<view class="content">
+
+  <view class='areainput'>
+    <input class='' placeholder='查地点、公交站、公共设施' bindinput='callinput'></input>
+  </view>
+
+  <view>
+    <view class="lable">
+      <text>热门搜索</text>
+      <view class="curarea">
+        <text>当前位置:</text>
+        <text class="colgreen" bindtap='chosecueloc'>{{curcity}}</text>
+      </view>
+    </view>
+    <scroll-view class='resou' scroll-y="true">
+      <text>公交车站</text>
+      <text>公交车站</text>
+      <text>公交车站</text>
+      <text>公交</text>
+      <text>公交车</text>
+      <text>公交车站</text>
+      <text>公</text>
+      <text>公交车站</text>
+      <text>公交车站</text>
+      <text>公交车</text>
+      <text>公交车站</text>
+      <text>公交</text>
+      <text>公交车站</text>
+      <text>公交车站</text>
+      <text>公交</text>
+      <text>公交车站</text>
+      <text>公交</text>
+      <text>公交车站</text>
+      <text>公交车站</text>
+      <text>公交</text>
+      <text>公交车站</text>
+    </scroll-view>
+  </view>
+
+  <view>
+    <view class="lable">历史记录</view>
+    <scroll-view class='history' scroll-y="true">
+      <view class='keyword'>
+        <text>搜索</text>
+      </view>
+      <view class='keyword'>
+        <text>搜索</text>
+      </view>
+      <view class='keyword'>
+        <text>搜索</text>
+      </view>
+      <view class='keyword'>
+        <text>搜索</text>
+      </view>
+      <view class='keyword'>
+        <text>搜索</text>
+      </view>
+      <view class='keyword'>
+        <text>搜索</text>
+      </view>
+      <view class='keyword'>
+        <text>搜索</text>
+      </view>
+      <view class='keyword'>
+        <text>搜索</text>
+      </view>
+      <view class='keyword'>
+        <text>搜索</text>
+      </view>
+    </scroll-view>
+    
+  </view>
+
+  <view bindtouchstart='startHandel' bindtouchend='endHandle' class="tapview">
+    <text>按住我</text>
+  </view>
+
+</view>
