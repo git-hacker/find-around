@@ -60,7 +60,8 @@ Page({
   data: {
     // 实例化API核心类
     mapkey: "AJ3BZ-EPVCQ-NEY5U-G5H5V-2THSH-XFFI4",
-    curcity: "天津"
+    curcity: "天津",
+    text:"按住我"
   },
 
   /**
@@ -150,11 +151,17 @@ Page({
   },
   startHandel: function () {
     console.log("开始")
+    this.setData({
+      text:"录音中"
+    })
     recorderManager.start()
   },
   endHandle: function () {
     console.log("结束")
     //结束录音  
+    this.setData({
+      text: "按住我"
+    })
     recorderManager.stop()
   },
   chosecueloc:function(){

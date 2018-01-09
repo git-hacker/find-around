@@ -72,7 +72,7 @@
   </view>
 
   <view bindtouchstart='startHandel' bindtouchend='endHandle' class="tapview">
-    <text>按住我</text>
+    <text>{{text}}</text>
   </view>
 
 </view>
