@@ -5,6 +5,19 @@
 }
 .areainput{
   padding: 20rpx 0rpx;
+  position: relative;
+}
+.areainput .context{
+  position: absolute;
+  top: 116.5rpx;
+  left: 0rpx;
+  right: 0rpx;
+  background: #fff;
+  z-index: 1000;
+  padding: 10rpx 20rpx;
+}
+.context view{
+  padding: 10rpx;
 }
 .areainput input{
   border: 1px solid #ccc;

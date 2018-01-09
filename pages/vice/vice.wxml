@@ -1,7 +1,10 @@
 <view class="content">
 
   <view class='areainput'>
-    <input class='' placeholder='查地点、公交站、公共设施' bindinput='callinput'></input>
+    <input class='' placeholder='查地点、公交站、公共设施' bindinput='callinput' bindblur='inputblur' bindfocus='inputfocus' confirm-type='search' bindconfirm="keyconfirm"></input>
+    <view class="context" wx:if="{{showcontext}}">
+      <view wx:for="{{keywos}}" wx:for-index="ind" wx:for-item="obj" bindtap='getData' data-index="{{ind}}">{{obj.address}}[{{obj.title}}]       </view>
+    </view>
   </view>
 
   <view>
