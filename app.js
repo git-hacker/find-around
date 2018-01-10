@@ -84,7 +84,7 @@ App({
         'content-type': 'application/x-www-form-urlencoded'
       },
       url: this.d.hostUrl + '/Api/Login/authlogin',
-      method: "post",
+      method: "POST",
       data: {
         openid: openid,
         NickName: user.nickName,
@@ -101,7 +101,6 @@ App({
           that.d.HeadUrl = info.HeadUrl;
         } else {
           var err = res.data.err;
-
           wx.showModal({
             title: '错误提醒',
             content: err

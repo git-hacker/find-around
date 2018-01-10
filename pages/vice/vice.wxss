@@ -26,7 +26,7 @@
   font-size: 28rpx;
 }
 .resou .history{
-  height: 400rpx;
+  height: 300rpx;
 }
 scroll-view{
   height: 300rpx;
@@ -46,7 +46,7 @@ scroll-view{
 }
 .tapview{
   text-align: center;
-  margin-top: 100rpx;
+  margin-top: 50rpx;
 }
 .tapview text{
   border-radius: 50%;

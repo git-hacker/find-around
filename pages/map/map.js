@@ -1,14 +1,11 @@
 // pages/map/map.js
 const app = getApp();
-var curloc = wx.getStorageSync('curloc')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    latitude: curloc.latitude,
-    longitude: curloc.longitude
   },
   /**
    * 生命周期函数--监听页面加载
@@ -32,7 +29,11 @@ Page({
       obj.iconPath = "/img/2.png";
       markers.push(obj);
     }
+    var curloc = wx.getStorageSync('curloc')
+    
     this.setData({
+      latitude: curloc.latitude,
+      longitude: curloc.longitude,
       markers: markers
     })
   },

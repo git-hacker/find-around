@@ -2,6 +2,7 @@
 var QQMapWX = require('./qqmap-wx-jssdk.min.js');
 var qqmapsdk,timeout;
 const app = getApp();
+var page;
 const recorderManager = wx.getRecorderManager()
 recorderManager.onStart(() => {
   console.log('recorder start')
@@ -35,14 +36,13 @@ recorderManager.onStop((res) => {
           title: '提示',
           content: data.data.text
         })
-        qqmapsdk.search({
-          keyword: data.data.text,
-          success: function (res) {
-            console.log(res);
-
-          }
-        }
-        )
+        // qqmapsdk.search({
+        //   keyword: data.data.text,
+        //   success: function (res) {
+        //     console.log(res);
+        //   }
+        // })
+        page.search(data.data.text);
       } else {
         wx.showToast({
           title: data.desc
@@ -71,6 +71,7 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
+    page = that;
     qqmapsdk = new QQMapWX({
       key: this.data.mapkey
     })
@@ -81,8 +82,38 @@ Page({
         },
       })
     }
+    //请求热门搜索和历史记录
+    //回调延迟 ，有时为空
+    console.log(app)
+    var uid = app.d.userId || 4;
+    wx.request({
+      header: {
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      url: app.d.hostUrl + '/Api/Index/index',
+      method: "post",
+      data: {
+        uid: uid
+      },
+      success:function( res ){
+        if (res.statusCode == 200){
+          var keyhis = res.data.data;
+          that.setData({
+            keyhis: keyhis[0],
+            keyre: keyhis[1]
+          })
+          console.log(res.data);
+  
+        }
+      }
+    })
   },
-
+  histap:function(e){
+    var val = e.currentTarget.dataset.keyword;
+    if (val && val != "") {
+      this.search(val);
+    }
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -261,7 +292,7 @@ Page({
     var latitude = this.data.latitude;
     var longitude = this.data.longitude;
     wx.showLoading({
-      title: '加载中',
+      title: '搜索中',
     })
     wx.request({
       header: {

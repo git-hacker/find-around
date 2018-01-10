@@ -16,59 +16,15 @@
       </view>
     </view>
     <scroll-view class='resou' scroll-y="true">
-      <text>公交车站</text>
-      <text>公交车站</text>
-      <text>公交车站</text>
-      <text>公交</text>
-      <text>公交车</text>
-      <text>公交车站</text>
-      <text>公</text>
-      <text>公交车站</text>
-      <text>公交车站</text>
-      <text>公交车</text>
-      <text>公交车站</text>
-      <text>公交</text>
-      <text>公交车站</text>
-      <text>公交车站</text>
-      <text>公交</text>
-      <text>公交车站</text>
-      <text>公交</text>
-      <text>公交车站</text>
-      <text>公交车站</text>
-      <text>公交</text>
-      <text>公交车站</text>
+      <text wx:for="{{keyre}}" wx:for-item="obj" bindtap='histap' data-keyword="{{obj.keyword}}">{{obj.keyword}}</text>
     </scroll-view>
   </view>
 
   <view>
     <view class="lable">历史记录</view>
     <scroll-view class='history' scroll-y="true">
-      <view class='keyword'>
-        <text>搜索</text>
-      </view>
-      <view class='keyword'>
-        <text>搜索</text>
-      </view>
-      <view class='keyword'>
-        <text>搜索</text>
-      </view>
-      <view class='keyword'>
-        <text>搜索</text>
-      </view>
-      <view class='keyword'>
-        <text>搜索</text>
-      </view>
-      <view class='keyword'>
-        <text>搜索</text>
-      </view>
-      <view class='keyword'>
-        <text>搜索</text>
-      </view>
-      <view class='keyword'>
-        <text>搜索</text>
-      </view>
-      <view class='keyword'>
-        <text>搜索</text>
+      <view class='keyword' wx:for="{{keyhis}}" wx:for-item="obj" bindtap='histap' data-keyword="{{obj.keyword}}">
+        <text>{{obj.keyword}}</text>
       </view>
     </scroll-view>
     
