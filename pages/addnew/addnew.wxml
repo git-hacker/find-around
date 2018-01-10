@@ -33,7 +33,7 @@
 
     <view class="weui-cell">
       <view class="imagearea" wx:for="{{imgUrls}}" wx:for-item="obj" wx:for-index="ind">
-        <image src="/pages/images/clear.png" class="clear" bindtap='removeimg' data-index="{{ind}}"></image>        
+        <image src="/img/clear.png" class="clear" bindtap='removeimg' data-index="{{ind}}"></image>        
         <image src='{{obj}}'></image>
       </view>
       <view class="uploadarea" bindtap='choseimg'>

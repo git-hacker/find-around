@@ -10,6 +10,7 @@ Page({
     //     {name:' cell standard ',value:' 0 ' },
     //     {name:' cell standard ',value:' 1 ',checked:true }
     // ]
+    imgUrls:[]
   },
 
   /**
@@ -105,7 +106,7 @@ Page({
           title: '图片上传中'
         });
         wx.uploadFile({
-          url: app.d.hostUrl + '/Api/Index/wxupload',
+          url: app.d.hostUrl + '/Api/Index/picupload',
           filePath: files[0],
           name: 'pic',
           success: function (res) {

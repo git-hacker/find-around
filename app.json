@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/addnew/addnew",
     "pages/vice/vice",    
-    "pages/map/map",
-    "pages/addnew/addnew"
+    "pages/map/map"
   ],
   "window":{
     "backgroundTextStyle":"light",
