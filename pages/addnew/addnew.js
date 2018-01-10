@@ -10,7 +10,9 @@ Page({
     //     {name:' cell standard ',value:' 0 ' },
     //     {name:' cell standard ',value:' 1 ',checked:true }
     // ]
-    imgUrls:[]
+    imgUrls:[],
+    keyword:"",
+    remark:""
   },
 
   /**
@@ -21,15 +23,20 @@ Page({
   },
 
   getlocation(){
+    var that = this;
     wx.chooseLocation({
       success: function(res) {
         console.log(res);
+        that.setData({
+          address: res.address + res.name,
+          latitude: res.latitude,
+          longitude: res.longitude
+        })
       }
     })
   },
   radioChange: function (e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value);
-
     var radioItems = this.data.radioItems;
     for (var i = 0, len = radioItems.length; i < len; ++i) {
       radioItems[i].checked = radioItems[i].value == e.detail.value;
@@ -60,7 +67,22 @@ Page({
   onHide: function () {
   
   },
-
+  keyinput: function( e ){
+    var keyword = e.detail.value;
+    if (keyword != this.data.keyword){
+      this.setData({
+        keyword: keyword
+      })
+    }
+  },
+  remarkinput: function( e ){
+    var remark = e.detail.value;
+    if (remark != this.data.remark) {
+      this.setData({
+        remark: remark
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面卸载
    */
@@ -89,6 +111,35 @@ Page({
   
   },
   showTopTips(){
+    var keyword = this.data.keyword;
+    var lat = this.data.latitude;
+    var lnt = this.data.longitude;
+    var address = this.data.address;
+    var photo = this.data.imgUrls.join(",");
+    var remark = this.data.remark;
+    wx.request({
+      header: {
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      url: app.d.hostUrl + '/Api/Index/addMarker',
+      method: "post",
+      data: {
+        uid: app.d.userId,
+        keyword: keyword,
+        lat: lat,
+        lnt: lnt,
+        address: address,
+        photo: photo,
+        remark: remark
+      },
+      success: function (res) {
+        if (res.statusCode == 200) {
+          console.log(res.data);
+
+        }
+      }
+    })
+
     wx.navigateBack()
   },
   //图片上传

@@ -5,19 +5,19 @@
         <view class="weui-label">关键词</view>
       </view>
       <view class="weui-cell__bd">
-        <input class="weui-input" placeholder="请输入关键词"/>
+        <input class="weui-input" placeholder="请输入关键词" bindinput='keyinput'/>
       </view>
     </view>
 
     <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="getlocation">
         <view class="weui-cell__hd">坐标地点</view>    
-        <view class="weui-cell__bd"></view>
+        <view class="weui-cell__bd">{{address}}</view>
         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
     </view>
 
     <view class="weui-cell weui-cell_input">
         <view class="weui-cell__bd">
-            <input class="weui-input" placeholder="备注信息（可填）" />
+            <input class="weui-input" placeholder="备注信息（可填）" bindinput='remarkinput'/>
         </view>
     </view>
 
@@ -33,7 +33,7 @@
 
     <view class="weui-cell">
       <view class="imagearea" wx:for="{{imgUrls}}" wx:for-item="obj" wx:for-index="ind">
-        <image src="/img/clear.png" class="clear" bindtap='removeimg' data-index="{{ind}}"></image>        
+        <image src="/img/clear.png" class="clear" bindtap='removeimg' data-index="{{ind}}"></image>
         <image src='{{obj}}'></image>
       </view>
       <view class="uploadarea" bindtap='choseimg'>
