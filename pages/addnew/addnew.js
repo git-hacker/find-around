@@ -135,7 +135,16 @@ Page({
       success: function (res) {
         if (res.statusCode == 200) {
           console.log(res.data);
-
+          wx.showToast({
+            title: res.data.message,
+          })
+          if (res.data.flag == "success"){
+            setTimeout(function(){
+              wx.navigateTo({
+                url: '/pages/vice/vice',
+              })
+            },1000)
+          }
         }
       }
     })
