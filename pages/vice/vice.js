@@ -2,13 +2,14 @@
 var QQMapWX = require('./qqmap-wx-jssdk.min.js');
 var qqmapsdk,timeout;
 const app = getApp();
-var page;
+var page,time;
 const recorderManager = wx.getRecorderManager()
 recorderManager.onStart(() => {
-  console.log('recorder start')
+  
 })
 recorderManager.onStop((res) => {
   console.log('recorder stop', res)
+  clearInterval(time);
   const { tempFilePath } = res
   wx.playVoice({
     filePath: tempFilePath,
@@ -32,9 +33,12 @@ recorderManager.onStop((res) => {
       var data = JSON.parse(res.data)
       //do something
       if (data.code == "00000") {
-        wx.showModal({
-          title: '提示',
-          content: data.data.text
+        // wx.showModal({
+        //   title: '提示',
+        //   content: data.data.text
+        // })
+        wx.showToast({
+          title: data.data.text,
         })
         // qqmapsdk.search({
         //   keyword: data.data.text,
@@ -65,7 +69,9 @@ Page({
     text:"按住我",
     showcontext:false,
     press:false,
-    index:0
+    index:0,
+    textval:9,
+    show:true
   },
 
   /**
@@ -262,7 +268,30 @@ Page({
     this.setData({
       text:"录音中"
     })
-    recorderManager.start()
+    recorderManager.start({
+      duration: 10000
+    })
+    this.setData({
+      textval: 9
+    });
+    time = setInterval(this.interval, 1000);
+  },
+  interval: function () {
+    console.log(this.data.textval)
+    var curval = this.data.textval - 1;
+    if(curval<0){
+      this.setData({
+        show: true,
+        textval: 9
+      });
+      recorderManager.stop()
+      clearInterval(time)
+    }else{
+      this.setData({
+        show: false,
+        textval: curval
+      });
+    }
   },
   //确认搜索关键词
   keyconfirm:function(e){

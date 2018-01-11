@@ -1,4 +1,5 @@
 <view class="content">
+  <view class="textval" hidden='{{show}}'>{{textval}}</view>
   <view class='areainput'>
     <image src='../../img/search.png'></image>
     <input class='' placeholder='查地点、公交站、公共设施' bindinput='callinput' bindblur='inputblur' bindfocus='inputfocus' confirm-type='search' bindconfirm="keyconfirm"></input>
@@ -27,7 +28,7 @@
     <scroll-view class='history' scroll-y="true">
       <view class='keyword' wx:for="{{keyhis}}" wx:for-item="obj" bindtap='histap' data-keyword="{{obj.keyword}}" wx:for-index="idx">
         <text>{{obj.keyword}}</text>
-        <image src='../../img/close.png' catchtap='removehis' data-keyword="{{obj.keyword}}" data-index="{{idx}}"></image>
+        <image class="clearimg" src='../../img/close.png' catchtap='removehis' data-keyword="{{obj.keyword}}" data-index="{{idx}}"></image>
       </view>
       
     </scroll-view>

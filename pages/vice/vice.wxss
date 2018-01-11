@@ -89,3 +89,22 @@
 .lable{
   padding: 30rpx 0rpx;
 }
+.clearimg{
+  width: 40rpx;
+  height: 40rpx;
+}
+.textval{
+  position: fixed;
+  width: 300rpx;
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 60rpx;
+  color: #ffffff;
+  top: 200rpx;
+  left: 50%;
+  transform: translate3d(-150rpx,0rpx,0rpx);
+  z-index: 10;
+  border-radius: 30rpx;
+}
