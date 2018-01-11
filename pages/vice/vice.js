@@ -75,22 +75,22 @@ Page({
     dis:[
       {
         txt:'1公里',
-        id:"1"
+        id:1000
       },
       {
         txt: '2公里',
-        id: "2"
+        id: 2000
       },
       {
         txt: '3公里',
-        id: "3"
+        id: 3000
       },
       {
         txt: '5公里',
-        id: "5"
+        id: 5000
       }
     ],
-    index1:1
+    index1:1000
   },
 
   /**
@@ -386,6 +386,8 @@ Page({
     var uid = app.d.userId;
     var latitude = this.data.latitude;
     var longitude = this.data.longitude;
+    var distinct = this.data.index1;
+    
     wx.showLoading({
       title: '搜索中',
     })
@@ -399,7 +401,8 @@ Page({
         uid: uid,
         keyword: keyword,
         latitude: latitude,
-        longitude: longitude
+        longitude: longitude,
+        distinct: distinct
       },
       success:function( res1 ){
         var res = res1.data;
@@ -411,7 +414,7 @@ Page({
         }else{
           wx.showModal({
             title: '提示',
-            content: '2公里内无搜索结果！'
+            content: distinct+'米内无搜索结果！'
           })
         }
         console.log("接口数据", res1.data )

@@ -1,11 +1,11 @@
 //app.js
 App({
   d: {
-    hostUrl: 'http://mapxcx.suzwgt.com/index.php',
-    hostImg: 'http://mapxcx.suzwgt.com',
+    hostUrl: 'https://mapxcx.kanziqiang.top/index.php',
+    hostImg: 'https://mapxcx.kanziqiang.top',
     appId: "wxe900513990933078",
     appKey: "8844c389cef08accd7ea86abfffbfb7e",
-    ceshiUrl: 'http://mapxcx.suzwgt.com/index.php',
+    ceshiUrl: 'https://mapxcx.kanziqiang.top/index.php',
   },
   onLaunch: function () {
     //调用API从本地缓存中获取数据

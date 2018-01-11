@@ -8,10 +8,11 @@
     </view>
   </view>
   <view class="ovhid index-sel">
-  <block wx:for="{{dis}}" wx:key="item.id" wx:for-index="idx" wx:for-item="item">
-    <image src="{{(index1===idx)?'../../img/sel1.png':'../../img/sel0.png'}}" class="fl square20" bindtap='tog' data-in="{{idx}}"></image>
+  
+  <block wx:for="{{dis}}" wx:key="item.id" wx:for-item="item">
+    <image src="{{(index1===item.id)?'../../img/sel1.png':'../../img/sel0.png'}}" class="fl square20" bindtap='tog' data-in="{{item.id}}"></image>
     <text class="fl mal5">{{item.txt}}</text>
-    </block>
+  </block>
   </view>
   <view>
     <view class="lable">
