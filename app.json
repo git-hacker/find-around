@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/vice/vice",    
+    "pages/addnew/addnew",
+    "pages/map/map"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1AAD19",
+    "navigationBarTitleText": "找周边",
+    "navigationBarTextStyle":"white"
+  }
+}

@@ -1,0 +1,68 @@
+/* pages/vice/vice.wxss */
+.content{
+  padding: 0rpx 20rpx;
+  font-size: 28rpx;
+}
+.areainput{
+  padding: 20rpx 0rpx;
+  position: relative;
+}
+.areainput .context{
+  position: absolute;
+  top: 116.5rpx;
+  left: 0rpx;
+  right: 0rpx;
+  background: #fff;
+  z-index: 1000;
+  padding: 10rpx 20rpx;
+}
+.context view{
+  padding: 10rpx;
+}
+.areainput input{
+  border: 1px solid #ccc;
+  padding: 10rpx;
+  padding-left: 80rpx;
+  font-size: 28rpx;
+}
+.resou .history{
+  height: 300rpx;
+}
+scroll-view{
+  height: 300rpx;
+}
+.keyword{
+  padding: 10rpx 0px;
+  border-bottom: 1px solid #ccc;
+}
+.resou text{
+  display: inline-block;
+  padding: 5rpx 10rpx;
+  border: 1px solid #ccc;
+  color: #cccccc;  
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  
+}
+.tapview{
+  text-align: center;
+  margin-top: 50rpx;
+}
+.tapview text{
+  border-radius: 50%;
+  width: 200rpx;
+  height: 200rpx;
+  background: #1AAD19;
+  display: inline-block;
+  line-height: 200rpx;
+  color: #fff;
+}
+.curarea{
+  float: right;
+}
+.colgreen{
+  color: #1AAD19;
+}
+.lable{
+  padding: 20rpx 0rpx;
+}

@@ -1,0 +1,13 @@
+/* pages/map/map.wxss */
+map{
+  position: fixed;
+  width: 750rpx;
+  height: 100%;
+}
+.addnew{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  right: 50rpx;
+  top: 50rpx;
+}
