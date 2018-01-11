@@ -87,7 +87,16 @@ Page({
     //请求热门搜索和历史记录
     //回调延迟 ，有时为空
     console.log(app)
-    var uid = app.d.userId || 4;
+    var intval = setInterval(function(){
+      var uid = app.d.userId;      
+      if(uid && uid!="" && uid>0){
+        clearInterval(intval);
+        that.loadindex(uid);
+      }
+    },500);
+  },
+  loadindex: function (uid){
+    var that = this;
     wx.request({
       header: {
         'content-type': 'application/x-www-form-urlencoded'
@@ -97,15 +106,14 @@ Page({
       data: {
         uid: uid
       },
-      success:function( res ){
-        if (res.statusCode == 200){
+      success: function (res) {
+        if (res.statusCode == 200) {
           var keyhis = res.data.data;
           that.setData({
             keyhis: keyhis[0],
             keyre: keyhis[1]
           })
           console.log(res.data);
-  
         }
       }
     })
