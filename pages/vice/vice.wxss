@@ -69,7 +69,7 @@
 }
 .tapview{
   text-align: center;
-  margin-top: 50rpx;
+  margin-top: 30rpx;
 }
 .tapview text{
   border-radius: 50%;
@@ -107,4 +107,10 @@
   transform: translate3d(-150rpx,0rpx,0rpx);
   z-index: 10;
   border-radius: 30rpx;
+}
+.index-sel image{
+  margin-left:20rpx;
+}
+.index-sel image:first-child{
+  margin-left:0;
 }

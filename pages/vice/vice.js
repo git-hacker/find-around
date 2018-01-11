@@ -71,7 +71,26 @@ Page({
     press:false,
     index:0,
     textval:9,
-    show:true
+    show:true,
+    dis:[
+      {
+        txt:'1公里',
+        id:"1"
+      },
+      {
+        txt: '2公里',
+        id: "2"
+      },
+      {
+        txt: '3公里',
+        id: "3"
+      },
+      {
+        txt: '5公里',
+        id: "5"
+      }
+    ],
+    index1:1
   },
 
   /**
@@ -398,6 +417,12 @@ Page({
       complete:function(){
         wx.hideLoading();
       }
+    })
+  },
+  tog:function(e){
+    var idx=e.currentTarget.dataset.in;
+    this.setData({
+      index1:idx
     })
   }
 })

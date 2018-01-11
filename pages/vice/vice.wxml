@@ -4,13 +4,15 @@
     <image src='../../img/search.png'></image>
     <input class='' placeholder='查地点、公交站、公共设施' bindinput='callinput' bindblur='inputblur' bindfocus='inputfocus' confirm-type='search' bindconfirm="keyconfirm"></input>
     <view class="context" wx:if="{{showcontext}}">
-       <view wx:for="{{keywos}}" wx:for-index="ind" wx:for-item="obj" bindtap='getData' data-index="{{ind}}" class="{(index==ind) ? 'on' : ''}">{{obj.address}}[{{obj.title}}] </view> 
+      <view wx:for="{{keywos}}" wx:for-index="ind" wx:for-item="obj" bindtap='getData' data-index="{{ind}}" class="{(index==ind) ? 'on' : ''}">{{obj.address}}[{{obj.title}}] </view>
     </view>
-    <!-- <view class="context">
-       <view bindtap='getData' wx:for="{{test}}" wx:for-index="ind" data-index="{{ind}}" class="{{(index===ind) ? 'on' : ''}}">{{item.txt}} </view> 
-    </view> -->
   </view>
-
+  <view class="ovhid index-sel">
+  <block wx:for="{{dis}}" wx:key="item.id" wx:for-index="idx" wx:for-item="item">
+    <image src="{{(index1===idx)?'../../img/sel1.png':'../../img/sel0.png'}}" class="fl square20" bindtap='tog' data-in="{{idx}}"></image>
+    <text class="fl mal5">{{item.txt}}</text>
+    </block>
+  </view>
   <view>
     <view class="lable">
       <text>热门搜索</text>
@@ -23,14 +25,14 @@
       <text wx:for="{{keyre}}" wx:for-item="obj" bindtap='histap' data-keyword="{{obj.keyword}}">{{obj.keyword}}</text>
     </scroll-view>
   </view>
-   <view>
+  <view>
     <view class="lable">历史记录</view>
     <scroll-view class='history' scroll-y="true">
       <view class='keyword' wx:for="{{keyhis}}" wx:for-item="obj" bindtap='histap' data-keyword="{{obj.keyword}}" wx:for-index="idx">
         <text>{{obj.keyword}}</text>
         <image class="clearimg" src='../../img/close.png' catchtap='removehis' data-keyword="{{obj.keyword}}" data-index="{{idx}}"></image>
       </view>
-      
+
     </scroll-view>
   </view>
 

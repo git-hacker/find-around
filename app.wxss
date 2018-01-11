@@ -8,3 +8,25 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.ovhid{
+  overflow:hidden;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.lh40{
+  line-height:80rpx;
+}
+.mal5{
+  margin-left:10rpx;
+}
+.mal10{
+  margin-left:20rpx;
+}
+.square20{
+  width:40rpx;
+  height:40rpx;
+}
