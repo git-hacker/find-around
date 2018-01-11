@@ -116,6 +116,38 @@ Page({
       this.search(val);
     }
   },
+  removehis:function(e){
+    var val = e.currentTarget.dataset.keyword;
+    var index = e.currentTarget.dataset.index;
+    var uid = app.d.userId || 4;
+    if (val && val != "") {
+      wx.request({
+        header: {
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        url: app.d.hostUrl + '/Api/Index/removehis',
+        method: "post",
+        data: {
+          uid: uid,
+          keyword: val
+        },
+        success: function (res) {
+          if (res.statusCode == 200) {
+            var data = res.data;
+            wx.showToast({
+              title: data.message,
+            })
+            var keyhis = this.data.keyhis;
+            keyhis.splice(index,1);
+            this.setData({
+              keyhis: keyhis
+            })
+            console.log(res.data);
+          }
+        }.bind(this)
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

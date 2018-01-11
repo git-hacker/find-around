@@ -22,16 +22,16 @@
       <text wx:for="{{keyre}}" wx:for-item="obj" bindtap='histap' data-keyword="{{obj.keyword}}">{{obj.keyword}}</text>
     </scroll-view>
   </view>
-  <!-- <view>
+   <view>
     <view class="lable">历史记录</view>
     <scroll-view class='history' scroll-y="true">
-      <view class='keyword' wx:for="{{keyhis}}" wx:for-item="obj" bindtap='histap' data-keyword="{{obj.keyword}}">
+      <view class='keyword' wx:for="{{keyhis}}" wx:for-item="obj" bindtap='histap' data-keyword="{{obj.keyword}}" wx:for-index="idx">
         <text>{{obj.keyword}}</text>
-        <image src='../../img/close.png'></image>
+        <image src='../../img/close.png' catchtap='removehis' data-keyword="{{obj.keyword}}" data-index="{{idx}}"></image>
       </view>
+      
     </scroll-view>
-
-  </view> -->
+  </view>
 
   <view bindtouchstart='startHandel' bindtouchend='endHandle' class="tapview">
     <text>{{text}}</text>

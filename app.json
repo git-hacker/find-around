@@ -7,7 +7,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#1AAD19",
-    "navigationBarTitleText": "找周边",
+    "navigationBarTitleText": "Find周边",
     "navigationBarTextStyle":"white"
   }
 }
