@@ -341,7 +341,9 @@ Page({
     console.log("结束")
     //结束录音  
     this.setData({
-      text: "按住我"
+      text: "按住我",
+      show: true,
+      textval: 9
     })
     recorderManager.stop()
   },
