@@ -2,10 +2,10 @@
 App({
   d: {
     hostUrl: 'https://mapxcx.kanziqiang.top/index.php',
-    hostImg: 'http://mapxcx.kanziqiang.top',
+    hostImg: 'https://mapxcx.kanziqiang.top',
     appId: "wxe900513990933078",
     appKey: "8844c389cef08accd7ea86abfffbfb7e",
-    ceshiUrl: 'http://mapxcx.kanziqiang.top/index.php',
+    ceshiUrl: 'https://mapxcx.kanziqiang.top/index.php'
   },
   onLaunch: function () {
     //调用API从本地缓存中获取数据
