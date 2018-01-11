@@ -63,7 +63,9 @@ Page({
     mapkey: "AJ3BZ-EPVCQ-NEY5U-G5H5V-2THSH-XFFI4",
     curcity: "天津",
     text:"按住我",
-    showcontext:false
+    showcontext:false,
+    press:false,
+    index:0
   },
 
   /**
@@ -233,6 +235,9 @@ Page({
   getData:function(e){
     console.log(e);
     var index = e.currentTarget.dataset.index;
+    this.setData({
+      index:index
+    })
     var keywos = this.data.keywos;
     if (keywos[index]){
       var loc = keywos[index];
@@ -316,7 +321,7 @@ Page({
         }else{
           wx.showModal({
             title: '提示',
-            content: '无搜索结果！'
+            content: '2公里内无搜索结果！'
           })
         }
         console.log("接口数据", res1.data )

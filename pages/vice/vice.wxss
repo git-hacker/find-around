@@ -1,7 +1,7 @@
 /* pages/vice/vice.wxss */
 .content{
-  padding: 0rpx 20rpx;
-  font-size: 28rpx;
+  padding: 0rpx 30rpx;
+  font-size: 30rpx;
 }
 .areainput{
   padding: 20rpx 0rpx;
@@ -9,33 +9,56 @@
 }
 .areainput .context{
   position: absolute;
-  top: 116.5rpx;
+  top: 110rpx;
   left: 0rpx;
   right: 0rpx;
-  background: #fff;
+  background:#1AAD19;
+  color:#fff;
   z-index: 1000;
-  padding: 10rpx 20rpx;
+  /* padding:20rpx 0rpx; */
+  border:1px solid #ddd;
+}
+.areainput image{
+  position:absolute;
+  top:25rpx;
+  left:10rpx;
+  width:60rpx;
+  height:60rpx;
 }
 .context view{
-  padding: 10rpx;
+  padding: 15rpx 20rpx;
+  background:transparent;
+  color:#fff;
+  font-size:30rpx;
 }
+ .context view.on{
+  background:#fff;
+  color:#1AAD19;
+} 
 .areainput input{
   border: 1px solid #ccc;
   padding: 10rpx;
   padding-left: 80rpx;
-  font-size: 28rpx;
+  font-size: 30rpx;
 }
-.resou .history{
+.history{
+  height:400rpx;
+}
+/* scroll-view{
   height: 300rpx;
-}
-scroll-view{
-  height: 300rpx;
-}
+} */
 .keyword{
   padding: 10rpx 0px;
   border-bottom: 1px solid #ccc;
+  overflow:hidden;
+}
+.keyword image{
+  float:right;
+  width:40rpx;
+  height:40rpx;
 }
 .resou text{
+  float:left;
   display: inline-block;
   padding: 5rpx 10rpx;
   border: 1px solid #ccc;
@@ -64,5 +87,5 @@ scroll-view{
   color: #1AAD19;
 }
 .lable{
-  padding: 20rpx 0rpx;
+  padding: 30rpx 0rpx;
 }

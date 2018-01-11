@@ -1,10 +1,13 @@
 <view class="content">
-
   <view class='areainput'>
+    <image src='../../img/search.png'></image>
     <input class='' placeholder='查地点、公交站、公共设施' bindinput='callinput' bindblur='inputblur' bindfocus='inputfocus' confirm-type='search' bindconfirm="keyconfirm"></input>
     <view class="context" wx:if="{{showcontext}}">
-      <view wx:for="{{keywos}}" wx:for-index="ind" wx:for-item="obj" bindtap='getData' data-index="{{ind}}">{{obj.address}}[{{obj.title}}]       </view>
+       <view wx:for="{{keywos}}" wx:for-index="ind" wx:for-item="obj" bindtap='getData' data-index="{{ind}}" class="{(index==ind) ? 'on' : ''}">{{obj.address}}[{{obj.title}}] </view> 
     </view>
+    <!-- <view class="context">
+       <view bindtap='getData' wx:for="{{test}}" wx:for-index="ind" data-index="{{ind}}" class="{{(index===ind) ? 'on' : ''}}">{{item.txt}} </view> 
+    </view> -->
   </view>
 
   <view>
@@ -15,20 +18,20 @@
         <text class="colgreen" bindtap='chosecueloc'>{{curcity}}</text>
       </view>
     </view>
-    <scroll-view class='resou' scroll-y="true">
+    <scroll-view class='resou'>
       <text wx:for="{{keyre}}" wx:for-item="obj" bindtap='histap' data-keyword="{{obj.keyword}}">{{obj.keyword}}</text>
     </scroll-view>
   </view>
-
-  <view>
+  <!-- <view>
     <view class="lable">历史记录</view>
     <scroll-view class='history' scroll-y="true">
       <view class='keyword' wx:for="{{keyhis}}" wx:for-item="obj" bindtap='histap' data-keyword="{{obj.keyword}}">
         <text>{{obj.keyword}}</text>
+        <image src='../../img/close.png'></image>
       </view>
     </scroll-view>
-    
-  </view>
+
+  </view> -->
 
   <view bindtouchstart='startHandel' bindtouchend='endHandle' class="tapview">
     <text>{{text}}</text>
