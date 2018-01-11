@@ -21,13 +21,9 @@ App({
     // wx.showLoading({
     //   title: '登录中！'
     // })
-    this.getUserInfo(function (resp) {
-      wx.getStorage({
-        key: 'onlyid',
-        success: function (res) {
-          that.loginIn(res.data, resp)
-        },
-      })
+    this.getUserInfo(function (resp,openid) {
+      var openid = wx.getStorageSync("onlyid")
+      that.loginIn(openid, resp);
     });
   },
   getUserInfo: function (cb) {
@@ -41,36 +37,32 @@ App({
           if (res.code) {
             //发起网络请求
             wx.request({
-              url: 'https://api.weixin.qq.com/sns/jscode2session',
+              url: this.d.hostUrl + '/Api/Login/getOpenid',
               data: {
-                appid: that.d.appId,//wxf8926497d05d5c26
-                secret: that.d.appKey,//4158d5405702037a22c2ac3ea2b00928
-                js_code: res.code,
-                grant_type: "authorization_code"
+                js_code: res.code
               },
               header: {
-                'content-type': 'application/json'
+                'content-type': 'application/x-www-form-urlencoded'
               },
+              method:"POST",
               success: function (res1) {
                 var openid = res1.data.openid;
-                wx.setStorage({
-                  key: "onlyid",
-                  data: openid
-                })
+                wx.setStorageSync("onlyid", openid)
                 // console.log(res.data.openid)
+                wx.getUserInfo({
+                  success: function (res) {
+                    // console.log(res)
+                    that.globalData.userInfo = res.userInfo
+                    typeof cb == "function" && cb(that.globalData.userInfo)
+                  }
+                })
               }
             })
           } else {
             console.log('获取用户登录态失败！' + res.errMsg)
           }
-          wx.getUserInfo({
-            success: function (res) {
-              // console.log(res)
-              that.globalData.userInfo = res.userInfo
-              typeof cb == "function" && cb(that.globalData.userInfo)
-            }
-          })
-        }
+          
+        }.bind(this)
       })
     }
   },

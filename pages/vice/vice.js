@@ -368,7 +368,10 @@ Page({
       },
       success: function (res) {
         if (res.status == 0) {
-          var curcity = res.result.address_component.district || res.result.address_component.city;
+          var curcity = "未知";
+          if (res.result && res.result.address_component){
+            var curcity = res.result.address_component.district || res.result.address_component.city; 
+          }
           wx.setStorage({
             key: 'curloc',
             data: res1,
