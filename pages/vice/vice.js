@@ -9,7 +9,6 @@ recorderManager.onStart(() => {
 })
 recorderManager.onStop((res) => {
   console.log('recorder stop', res)
-  clearInterval(time);
   const { tempFilePath } = res
   wx.playVoice({
     filePath: tempFilePath,
@@ -291,20 +290,31 @@ Page({
       duration: 10000
     })
     this.setData({
+      show: true,
       textval: 9
     });
     time = setInterval(this.interval, 1000);
   },
+  endHandle: function () {
+    console.log("结束")
+    //结束录音  
+    this.setData({
+      text: "按住我",
+      show: true,
+      textval: 0
+    });
+    recorderManager.stop()
+  },
   interval: function () {
     console.log(this.data.textval)
     var curval = this.data.textval - 1;
-    if(curval<0){
+    if(curval<=0){
+      clearInterval(time)      
       this.setData({
         show: true,
-        textval: 9
+        textval: 0
       });
       recorderManager.stop()
-      clearInterval(time)
     }else{
       this.setData({
         show: false,
@@ -336,16 +346,6 @@ Page({
         longitude: loc.location.lng
       })
     }
-  },
-  endHandle: function () {
-    console.log("结束")
-    //结束录音  
-    this.setData({
-      text: "按住我",
-      show: true,
-      textval: 9
-    })
-    recorderManager.stop()
   },
   chosecueloc:function(){
     //修改当前定位位置
