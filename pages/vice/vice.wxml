@@ -2,13 +2,13 @@
   <view class="textval" hidden='{{show}}'>{{textval}}</view>
   <view class='areainput'>
     <image src='../../img/search.png'></image>
-    <input class='' placeholder='查地点、公交站、公共设施' bindinput='callinput' bindblur='inputblur' bindfocus='inputfocus' confirm-type='search' bindconfirm="keyconfirm"></input>
-    <view class="context" wx:if="{{showcontext}}">
-      <view wx:for="{{keywos}}" wx:for-index="ind" wx:for-item="obj" bindtap='getData' data-index="{{ind}}" class="{(index==ind) ? 'on' : ''}">{{obj.address}}[{{obj.title}}] </view>
-    </view>
+    <input class='' placeholder='查地点、公交站、公共设施' bindinput='callinput' bindblur='' bindfocus='inputfocus' confirm-type='search' bindconfirm="keyconfirm" value="{{val}}"></input>
+    <text bindtap="clear">清除</text>
+    <scroll-view class="context" wx:if="{{showcontext}}" scroll-y="true">
+      <view wx:for="{{keywos}}" wx:for-index="ind" wx:for-item="obj" bindtap='getData' data-index="{{ind}}" class="{{(index0===ind) ? 'on' : ''}}">{{obj.address}}[{{obj.title}}] </view>
+    </scroll-view>
   </view>
   <view class="ovhid index-sel">
-  
   <block wx:for="{{dis}}" wx:key="item.id" wx:for-item="item">
     <image src="{{(index1===item.id)?'../../img/sel1.png':'../../img/sel0.png'}}" class="fl square20" bindtap='tog' data-in="{{item.id}}"></image>
     <text class="fl mal5">{{item.txt}}</text>
@@ -18,7 +18,7 @@
     <view class="lable">
       <text>热门搜索</text>
       <view class="curarea">
-        <text>当前位置:</text>
+        <text>当前位置：</text>
         <text class="colgreen" bindtap='chosecueloc'>{{curcity}}</text>
       </view>
     </view>

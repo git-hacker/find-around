@@ -6,6 +6,17 @@ Page({
    * 页面的初始数据
    */
   data: {
+    controls: [{
+      id: 1,
+      iconPath: '/img/1.png',
+      position: {
+        left:270,
+        top: 20,
+        width: 30,
+        height: 30
+      },
+      clickable: true
+    }]
   },
   /**
    * 生命周期函数--监听页面加载
@@ -14,6 +25,7 @@ Page({
     var marker = wx.getStorageSync('markers')
     console.log(marker)
     var markers = [];
+    //循环取出符合map组件的marker数据
     for (var i in marker) {
       var cur = marker[i];
       var obj = {
@@ -122,48 +134,7 @@ Page({
       markers: markers
     })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
+  //点击地图图标
   markertap: function (e) {
     var idx = e.markerId;
     var obj = this.data.markers[idx];
@@ -175,13 +146,7 @@ Page({
       longitude: obj.longitude,
     })
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
+  //跳转--添加地标
   navto: function () {
     wx.navigateTo({
       url: '/pages/addnew/addnew',

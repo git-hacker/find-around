@@ -1,5 +1,5 @@
-<map longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" bindmarkertap="markertap">
-  <cover-view>
+<map longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" bindmarkertap="markertap" controls='{{controls}}' bindcontroltap="navto">
+  <!-- <cover-view>
     <cover-image src="/img/1.png" class="addnew" bindtap='navto'></cover-image>
-  </cover-view>
+  </cover-view> -->
 </map>

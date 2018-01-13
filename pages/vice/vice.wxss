@@ -4,45 +4,56 @@
   font-size: 30rpx;
 }
 .areainput{
-  padding: 20rpx 0rpx;
-  position: relative;
+  margin: 20rpx 0rpx;
+  padding: 10rpx 0rpx;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  position:relative;
 }
 .areainput .context{
   position: absolute;
-  top: 110rpx;
-  left: 0rpx;
-  right: 0rpx;
-  background:#1AAD19;
-  color:#fff;
+  top: 75rpx;
+  left: -2rpx;
+  right: -2rpx;
+  background:#fff;
+  color:#1AAD19;
   z-index: 1000;
   /* padding:20rpx 0rpx; */
   border:1px solid #ddd;
+  height:400rpx;
+  box-shadow:0rpx 2rpx 5rpx 5rpx rgba(0,0,0,0.1);
 }
 .areainput image{
-  position:absolute;
-  top:25rpx;
-  left:10rpx;
-  width:60rpx;
-  height:60rpx;
+  width:50rpx;
+  height:50rpx;
+  margin:0rpx 10rpx;
+}
+.areainput text{
+  color:#1AAD19;
+  width:100rpx;
+  height:50rpx;
+  text-align:center;
+  line-height:50rpx;
+  display:inline-block;
 }
 .context view{
   padding: 15rpx 20rpx;
   background:transparent;
-  color:#fff;
+  color:#1AAD19;
   font-size:30rpx;
 }
  .context view.on{
-  background:#fff;
-  color:#1AAD19;
+  background:#1AAD19;
+  color:#fff;
 } 
 .areainput input{
-  border: 1px solid #ccc;
-  padding: 10rpx;
-  padding-left: 80rpx;
   font-size: 30rpx;
+  height: 50rpx;
+  flex: 1;
 }
 .history{
-  height:400rpx;
+  height:300rpx;
 }
 /* scroll-view{
   height: 300rpx;
@@ -51,6 +62,7 @@
   padding: 10rpx 0px;
   border-bottom: 1px solid #ccc;
   overflow:hidden;
+  color:#666;
 }
 .keyword image{
   float:right;
@@ -64,12 +76,12 @@
   border: 1px solid #1AAD19;
   color: #1AAD19;  
   margin-right: 20rpx;
-  margin-top: 20rpx;
+  margin-bottom: 20rpx;
   
 }
 .tapview{
   text-align: center;
-  margin-top: 30rpx;
+  margin-top: 60rpx;
 }
 .tapview text{
   border-radius: 50%;
@@ -82,12 +94,13 @@
 }
 .curarea{
   float: right;
+  color:#666;
 }
 .colgreen{
   color: #1AAD19;
 }
 .lable{
-  padding: 30rpx 0rpx;
+  padding: 40rpx 0rpx 30rpx;
 }
 .clearimg{
   width: 40rpx;
@@ -107,6 +120,9 @@
   transform: translate3d(-150rpx,0rpx,0rpx);
   z-index: 10;
   border-radius: 30rpx;
+}
+.index-sel{
+  margin-top:30rpx;
 }
 .index-sel image{
   margin-left:20rpx;
