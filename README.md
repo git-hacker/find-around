@@ -1,4 +1,4 @@
-# ![LOGO](https://mapxcx.kanziqiang.top/img/1.png)（Find周边）
+# ![LOGO](https://mapxcx.kanziqiang.top/img/1.png =50x50)（Find周边）
 * 团队成员： 阚自强、宋佳欣、董春侠、马丁
 
 ## 产品背景
