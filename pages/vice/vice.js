@@ -2,17 +2,15 @@
 var QQMapWX = require('./qqmap-wx-jssdk.min.js');
 var qqmapsdk,timeout;
 const app = getApp();
-var page,time;
+var page, time; 
 const recorderManager = wx.getRecorderManager()
 recorderManager.onStart(() => {
   
 })
+//录音停止函数
 recorderManager.onStop((res) => {
   console.log('recorder stop', res)
   const { tempFilePath } = res
-  wx.playVoice({
-    filePath: tempFilePath,
-  })
   wx.showLoading({
     title: '等待识别',
   })
@@ -32,19 +30,11 @@ recorderManager.onStop((res) => {
       var data = JSON.parse(res.data)
       //do something
       if (data.code == "00000") {
-        // wx.showModal({
-        //   title: '提示',
-        //   content: data.data.text
-        // })
+        //识别成功,提示识别结果
         wx.showToast({
           title: data.data.text,
         })
-        // qqmapsdk.search({
-        //   keyword: data.data.text,
-        //   success: function (res) {
-        //     console.log(res);
-        //   }
-        // })
+        //调用查询函数
         page.search(data.data.text);
       } else {
         wx.showToast({
@@ -68,9 +58,10 @@ Page({
     text:"按住我",
     showcontext:false,
     press:false,
-    index:0,
-    textval:9,
+    index0:-1,
+    textval:10,
     show:true,
+    val:'',
     dis:[
       {
         txt:'1公里',
@@ -91,7 +82,6 @@ Page({
     ],
     index1:1000
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -110,7 +100,6 @@ Page({
     }
     //请求热门搜索和历史记录
     //回调延迟 ，有时为空
-    console.log(app)
     var intval = setInterval(function(){
       var uid = app.d.userId;      
       if(uid && uid!="" && uid>0){
@@ -119,6 +108,11 @@ Page({
       }
     },500);
   },
+  onShow:function(){
+    var uid = app.d.userId; 
+    this.loadindex(uid);
+  },
+  //加载热门搜索和历史记录
   loadindex: function (uid){
     var that = this;
     wx.request({
@@ -142,16 +136,18 @@ Page({
       }
     })
   },
+  //历史记录--点击事件
   histap:function(e){
     var val = e.currentTarget.dataset.keyword;
     if (val && val != "") {
       this.search(val);
     }
   },
+  //删除历史记录
   removehis:function(e){
     var val = e.currentTarget.dataset.keyword;
     var index = e.currentTarget.dataset.index;
-    var uid = app.d.userId || 4;
+    var uid = app.d.userId;
     if (val && val != "") {
       wx.request({
         header: {
@@ -180,47 +176,7 @@ Page({
       })
     }
   },
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
+//搜索框数据双向绑定
   inputblur: function(){
     this.setData({
       showcontext:false
@@ -239,6 +195,9 @@ Page({
   */
   callinput: function (e) {
     var val = e.detail.value;
+    this.setData({
+      val:val
+    })
     clearTimeout(timeout);
     timeout = setTimeout(function(){
       this.getKeywords(val);
@@ -256,6 +215,7 @@ Page({
        })
        return;
      }
+    //调用微信自动补全方法
      qqmapsdk.search({
        keyword: val,
        location: {
@@ -279,8 +239,13 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: 'Find周边',
+      desc: '找你所需，就用Find周边!',
+      path: '/pages/vice/vice'
+    }
   },
+  //按下按钮--录音
   startHandel: function () {
     console.log("开始")
     this.setData({
@@ -291,10 +256,11 @@ Page({
     })
     this.setData({
       show: true,
-      textval: 9
+      textval: 10
     });
     time = setInterval(this.interval, 1000);
   },
+//松开按钮
   endHandle: function () {
     console.log("结束")
     //结束录音  
@@ -303,8 +269,10 @@ Page({
       show: true,
       textval: 0
     });
+    //触发录音停止
     recorderManager.stop()
   },
+  //定时器
   interval: function () {
     console.log(this.data.textval)
     var curval = this.data.textval - 1;
@@ -322,19 +290,20 @@ Page({
       });
     }
   },
-  //确认搜索关键词
+  //键盘输入后确认--搜索关键词
   keyconfirm:function(e){
     var val = e.detail.value;
     if(val && val != ""){
       this.search(val);
     }
   },
-  //getData  获取自动补全对应的数据
+  //getData  
+  //输入提示框点击事件--获取自动补全对应的数据
   getData:function(e){
     console.log(e);
     var index = e.currentTarget.dataset.index;
     this.setData({
-      index:index
+      index0:index
     })
     var keywos = this.data.keywos;
     if (keywos[index]){
@@ -347,8 +316,8 @@ Page({
       })
     }
   },
-  chosecueloc:function(){
-    //修改当前定位位置
+  // 修改当前定位位置
+  chosecueloc:function(){   
     var that = this;
     wx.chooseLocation({
       success: function(res) {
@@ -357,8 +326,8 @@ Page({
       }
     })
   },
-  setCur: function (res1){
   //设置中心位置
+  setCur: function (res1){
     var that = this;
     qqmapsdk.reverseGeocoder({
       get_poi: 1,
@@ -367,11 +336,13 @@ Page({
         longitude: res1.longitude
       },
       success: function (res) {
+        console.log(res)
         if (res.status == 0) {
           var curcity = "未知";
           if (res.result && res.result.address_component){
-            var curcity = res.result.address_component.district || res.result.address_component.city; 
+            curcity = res.result.address_component.street || res.result.address_component.district || res.result.address_component.city; 
           }
+          //保存设置的当前位置
           wx.setStorage({
             key: 'curloc',
             data: res1,
@@ -385,6 +356,7 @@ Page({
       }
     })
   },
+  //查询函数
   search:function(keyword){
     var uid = app.d.userId;
     var latitude = this.data.latitude;
@@ -427,10 +399,20 @@ Page({
       }
     })
   },
+  //选择搜索范围
   tog:function(e){
     var idx=e.currentTarget.dataset.in;
     this.setData({
       index1:idx
+    })
+  },
+  //清除搜索框
+  clear:function(){
+    var val='';
+    this.setData({
+      val:val,
+      showcontext:false,
+      keywos:[]
     })
   }
 })

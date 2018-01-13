@@ -14,14 +14,7 @@ Page({
     keyword:"",
     remark:""
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
-
+  //选择坐标
   getlocation(){
     var that = this;
     wx.chooseLocation({
@@ -35,38 +28,19 @@ Page({
       }
     })
   },
-  radioChange: function (e) {
-    console.log('radio发生change事件，携带value值为：', e.detail.value);
-    var radioItems = this.data.radioItems;
-    for (var i = 0, len = radioItems.length; i < len; ++i) {
-      radioItems[i].checked = radioItems[i].value == e.detail.value;
-    }
 
-    this.setData({
-      radioItems: radioItems
-    });
-  },
+  // radioChange: function (e) {
+  //   console.log('radio发生change事件，携带value值为：', e.detail.value);
+  //   var radioItems = this.data.radioItems;
+  //   for (var i = 0, len = radioItems.length; i < len; ++i) {
+  //     radioItems[i].checked = radioItems[i].value == e.detail.value;
+  //   }
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
+  //   this.setData({
+  //     radioItems: radioItems
+  //   });
+  // },
+  //实现输入关键词的双向数据绑定
   keyinput: function( e ){
     var keyword = e.detail.value;
     if (keyword != this.data.keyword){
@@ -75,6 +49,7 @@ Page({
       })
     }
   },
+  //实现备注信息的双向数据绑定
   remarkinput: function( e ){
     var remark = e.detail.value;
     if (remark != this.data.remark) {
@@ -83,33 +58,7 @@ Page({
       })
     }
   },
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  },
+  //确定--提交信息
   showTopTips(){
     var keyword = this.data.keyword;
     var lat = this.data.latitude;
@@ -194,6 +143,7 @@ Page({
       }.bind(this)
     })
   },
+  //取消上传
   removeimg: function (e) {
     var idex = e.currentTarget.dataset.index;
     var imgUrls = this.data.imgUrls;

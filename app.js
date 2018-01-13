@@ -10,18 +10,11 @@ App({
   onLaunch: function () {
     //调用API从本地缓存中获取数据
     var that = this;
-    // 设备信息
-    wx.getSystemInfo({
-      success: function (res) {
-        that.screenWidth = res.windowWidth;
-        that.screenHeight = res.windowHeight;
-        that.pixelRatio = res.pixelRatio;
-      }
-    });
-    // wx.showLoading({
-    //   title: '登录中！'
-    // })
-    this.getUserInfo(function (resp,openid) {
+    wx.showLoading({
+      title: '加载中...'
+    })
+    //调用函数，登陆
+    this.getUserInfo(function (resp) {
       var openid = wx.getStorageSync("onlyid")
       that.loginIn(openid, resp);
     });
@@ -29,9 +22,10 @@ App({
   getUserInfo: function (cb) {
     var that = this
     if (this.globalData.userInfo) {
+      //若登陆过，
       typeof cb == "function" && cb(this.globalData.userInfo)
     } else {
-      //调用登录接口
+      //第一次登陆，调用登录接口
       wx.login({
         success: function (res) {
           if (res.code) {
@@ -69,6 +63,7 @@ App({
   globalData: {
     userInfo: null
   },
+  //识别用户唯一的ID
   loginIn: function (openid, user) {
     var that = this;
     wx.request({
