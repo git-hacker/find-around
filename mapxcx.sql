@@ -186,11 +186,11 @@ INSERT INTO `map_markets` (`id`, `keyword`, `photo`, `lat`, `lnt`, `remark`, `st
 CREATE TABLE IF NOT EXISTS `map_user` (
   `id` int(11) NOT NULL COMMENT '用户表',
   `uname` varchar(255) DEFAULT NULL COMMENT '微信登录',
-  `photo` varchar(255) DEFAULT NULL COMMENT '用户地址',
+  `photo` varchar(255) DEFAULT NULL COMMENT '用户头像',
   `name` varchar(255) DEFAULT NULL COMMENT '用户名称',
-  `sex` varchar(255) DEFAULT NULL COMMENT '用户电话',
-  `pwd` varchar(255) DEFAULT NULL COMMENT '用户登录密码',
-  `openid` varchar(255) DEFAULT NULL COMMENT '用户登录名',
+  `sex` varchar(255) DEFAULT NULL COMMENT '用户性别',
+  `pwd` varchar(255) DEFAULT NULL COMMENT '默认登录密码',
+  `openid` varchar(255) DEFAULT NULL COMMENT '微信授权openid',
   `status` varchar(255) DEFAULT '0',
   `addtime` varchar(255) DEFAULT NULL,
   `source` varchar(255) DEFAULT NULL
