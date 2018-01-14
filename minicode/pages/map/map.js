@@ -23,7 +23,6 @@ Page({
    */
   onLoad: function (options) {
     var marker = wx.getStorageSync('markers')
-    console.log(marker)
     var markers = [];
     //循环取出符合map组件的marker数据
     for (var i in marker) {
@@ -138,7 +137,6 @@ Page({
   markertap: function (e) {
     var idx = e.markerId;
     var obj = this.data.markers[idx];
-    console.log(obj);
     wx.openLocation({
       name: obj['title'],
       address: obj['address'],

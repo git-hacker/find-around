@@ -9,7 +9,6 @@ recorderManager.onStart(() => {
 })
 //录音停止函数
 recorderManager.onStop((res) => {
-  console.log('recorder stop', res)
   const { tempFilePath } = res
   wx.showLoading({
     title: '等待识别',
@@ -19,7 +18,6 @@ recorderManager.onStop((res) => {
     filePath: tempFilePath,
     name: 'viceo',
     success: function (res) {
-      console.log(res);
       wx.hideLoading();
       if (res.data == "") {
         wx.showToast({
@@ -41,7 +39,6 @@ recorderManager.onStop((res) => {
           title: data.desc
         })
       }
-      console.log(data)
     }
   })
 })
@@ -131,7 +128,6 @@ Page({
             keyhis: keyhis[0],
             keyre: keyhis[1]
           })
-          console.log(res.data);
         }
       }
     })
@@ -170,7 +166,6 @@ Page({
             this.setData({
               keyhis: keyhis
             })
-            console.log(res.data);
           }
         }.bind(this)
       })
@@ -224,7 +219,6 @@ Page({
        },
        address_format: 'short',
        success: function (res) {
-         console.log("搜索结果", res);
          //此处 关键词 提示 索引
          if(res.status == 0 && res.count >0){
            that.setData({
@@ -247,7 +241,6 @@ Page({
   },
   //按下按钮--录音
   startHandel: function () {
-    console.log("开始")
     this.setData({
       text:"录音中"
     })
@@ -262,7 +255,6 @@ Page({
   },
 //松开按钮
   endHandle: function () {
-    console.log("结束")
     //结束录音  
     this.setData({
       text: "按住我",
@@ -274,7 +266,6 @@ Page({
   },
   //定时器
   interval: function () {
-    console.log(this.data.textval)
     var curval = this.data.textval - 1;
     if(curval<=0){
       clearInterval(time)      
@@ -300,7 +291,6 @@ Page({
   //getData  
   //输入提示框点击事件--获取自动补全对应的数据
   getData:function(e){
-    console.log(e);
     var index = e.currentTarget.dataset.index;
     this.setData({
       index0:index
@@ -321,7 +311,6 @@ Page({
     var that = this;
     wx.chooseLocation({
       success: function(res) {
-        console.log("当前选择位置",res)
         that.setCur(res);
       }
     })
@@ -336,7 +325,6 @@ Page({
         longitude: res1.longitude
       },
       success: function (res) {
-        console.log(res)
         if (res.status == 0) {
           var curcity = "未知";
           if (res.result && res.result.address_component){
@@ -392,7 +380,6 @@ Page({
             content: distinct+'米内无搜索结果！'
           })
         }
-        console.log("接口数据", res1.data )
       },
       complete:function(){
         wx.hideLoading();

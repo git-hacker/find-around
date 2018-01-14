@@ -19,7 +19,6 @@ Page({
     var that = this;
     wx.chooseLocation({
       success: function(res) {
-        console.log(res);
         that.setData({
           address: res.address + res.name,
           latitude: res.latitude,
@@ -83,7 +82,6 @@ Page({
       },
       success: function (res) {
         if (res.statusCode == 200) {
-          console.log(res.data);
           wx.showToast({
             title: res.data.message,
           })
@@ -110,7 +108,6 @@ Page({
       success: function (res) {
         // success
         var files = res.tempFilePaths;
-        console.log(files);
         wx.showLoading({
           title: '图片上传中'
         });
@@ -120,7 +117,6 @@ Page({
           name: 'pic',
           success: function (res) {
             var data = res.data;
-            console.log(data);
             var imgUrls = that.data.imgUrls;
             if (typeof data != 'object') data = JSON.parse(data);
             if (data.flag == "success") {
