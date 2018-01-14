@@ -38,7 +38,7 @@
 
 # ![LOGO](https://mapxcx.kanziqiang.top/img/3.jpeg)（首页展示）
 # ![LOGO](https://mapxcx.kanziqiang.top/img/2.jpeg)（地图索引）
-# ![LOGO](https://mapxcx.kanziqiang.top/img/5.jpeg)（原生导航）
+# ![LOGO](https://mapxcx.kanziqiang.top/img/6.jpeg)（原生导航）
 # ![LOGO](https://mapxcx.kanziqiang.top/img/4.jpeg)（增设地标）
 
 ## 未来展望
@@ -55,8 +55,10 @@
 
 ## 目录结构
 
-* 
-
+* admin			--	--	后端接口代码
+* minicode		--	--	前端小程序代码
+* README.md 	--	--	项目说明文档
+* mapxcx.sql 	--	--	数据库文件
 
 
 ## 本地部署
