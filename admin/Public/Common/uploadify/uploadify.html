@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <script src="__WEBPUBLIC__/Common/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="__WEBPUBLIC__/Common/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="__WEBPUBLIC__/Common/uploadify/uploadify.css">
+</head>
+
+<body>
+<form>
+    <div id="queue"></div>
+    <input id="file_upload" name="file_upload" type="file" multiple="true">
+    <a href="javascript:$('#file_upload').uploadify('upload','*')">upload</a>
+</form>
+
+<script type="text/javascript">
+    $(function() {
+        $('#file_upload').uploadify({
+            'formData'     : {
+                'timestamp' : '',
+                'token'     : ''
+            },
+
+            'auto' : false,//关闭自动上传
+
+            'removeTimeout' : 600,//文件队列上传完成1秒后删除
+
+            'swf' : '__WEBPUBLIC__/Common/uploadify/uploadify.swf',
+
+            'uploader' : '{:U("Demo/up")}',
+
+            'method' : 'post',  //方法，服务端可以用$_POST数组获取数据
+
+            'buttonText' : 'select',//设置按钮文本
+
+            'fileSizeLimit': 86400000000000000,          //控制上传文件的大小，单位byte
+
+            'multi' : true,//允许同时上传多张图片
+
+            'uploadLimit' : 8,//一次最多只允许上传10张图片
+
+            //'fileTypeDesc' : 'Image Files',//只允许上传图像
+
+            'fileTypeExts' : '*.gif; *.jpg; *.png; *.mp4; *.rmvb',//限制允许上传的图片后缀
+
+            'onUploadSuccess' : function(file, data, response) { //每次成功上传后执行的回调函数，从服务端返回数据到前端
+                alert(data);
+            }
+        });
+    });
+</script>
+</body>
+</html>

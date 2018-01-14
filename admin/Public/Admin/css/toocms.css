@@ -1,0 +1,313 @@
+html {height: 100%;}
+body{font-family: "Proxima Nova","ProximaNova-Light",\5FAE\8F6F\96C5\9ED1,'Nunito', myriad pro, tahoma, sans-serif; font-size: 12px}
+h1,h2,h3,h4,h5,h6{font-family:"Proxima Nova","ProximaNova-Light",\5FAE\8F6F\96C5\9ED1,'Nunito', myriad pro, tahoma, sans-serif;font-weight:normal;color:#666;}
+.clearfix:after{clear:both; content:" ";display: block; visibility:hidden; height:0}
+.fl{float: left;}
+.fr{float: right;}
+.pointer{cursor: pointer;}
+.dis-none{ display: none;}
+.f-left{ float: left !important;}
+.f-right{ float: right;}
+.clear{clear: both;}
+.pagediv .page{
+	display: inline-block;
+}
+.pagediv .page a{
+	margin-right: 5px;
+}
+.pagediv .page a span{
+	border: 1px solid #CCCCCC;
+	display: inline-block;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #717171;
+	font-size: 14px;
+}
+.pagediv .page a span:hover{
+	border: 1px solid #FF9900;
+	color: #FF9900;
+}
+.pagediv .page a .shownow{
+	border: 1px solid #009900;
+	color: #009900;
+}
+.pagediv .page .pageprev{
+	width: 50px;
+	height: 22px;
+}
+.pagediv .page .pagenext{
+	width: 50px;
+	height: 22px;
+}
+.pagediv .inputspan{
+	font-size: 14px;
+	color: #666666;
+}
+.pagediv .inputspan .pagetext{
+	border: 1px solid #CCCCCC;
+	height: 22px;
+	line-height:22px;
+	width: 50px;
+	color: #666666;
+}
+.pagediv .inputspan .butpage{
+	border: 1px solid #CCCCCC;
+	display: inline-block;
+	padding: 0px 8px 0px 8px;
+}
+/*头部样式*/
+header{width: 100%; background: #444444}
+header .row{width: 98%; margin: 0 auto}
+.navbar-header a .logo {height: 50px; color: #fff; font-weight: bold; font-size: 22px}
+.navbar-header .logo img{display: block; width: 100%; height: auto;}
+.navbar{border-radius:0;margin-bottom:0;border:none;height:50px; color: #fff}
+.navbar .navbar-nav > li > a{color: #fff;}
+.navbar .user-menu > li{padding:0 15px; text-align: center;}
+.navbar .user-menu > li.last a{width: 50px; height: 50px;}
+.navbar .user-menu > li > a,.navbar .user-menu > li > span{height:50px; line-height:50px; padding: 0;width: 130px;}
+.navbar .user-menu > li > a:hover,.navbar .user-menu > li > a:focus{background: #42474D}
+.navbar .navbar-nav > li > a.settings > span.icon,.navbar .navbar-nav > li > span.settings > span.icon{font-size: 18px;}
+.navbar .navbar-nav > li.last > a.settings > span.icon{font-size: 30px;width: 30px; height: 30px; padding-top: 10px;}
+.navbar .navbar-nav > li .txt{color: #ddd;font-size: 14px;}
+
+/*左边栏*/
+.sidebar{ position: absolute; width: 200px; height: 100%; background: #444444;}
+.sidebar-inner .nav li a{color: #eee; font-size: 14px; font-weight: 400; padding: 10px;}
+.sidebar-inner span.icon{margin:0 10px; font-size: 18px;}
+.sidebar-inner .nav li a:hover,.sidebar-inner .nav li > a.active{text-decoration: none; background: #3C3C3C; color:#fff; -webkit-transition:all .3s ease;-moz-transition: all .3s ease;-o-transition:all .3s ease;transition:all .3s ease;}
+.sidebar-inner .nav > li ul{list-style: none; padding-left: 0; display: none; background: #2A2A2A; margin-left: 0}
+.sidebar-inner .nav > li ul > li > a{font-size: 12px; font-weight: 400; display: block; color: #eee; padding: 10px 5px 10px 45px}
+.sidebar-inner .nav > li ul > li > a.active{background:#000000 !important; color: #fff !important}
+
+/*main主体样式*/
+.content{ background: #fff; margin: 0 10px}
+.content .page-title{ margin-top: 20px; margin-bottom: 0; color: #495b79;font-size: 24px;}
+.content .col-md-12{padding-left: 25px; padding-right: 25px}
+.content-box-content{position: relative;}
+.page-title{border-bottom: 1px solid #ddd; padding-bottom: 9px}
+.content-box-column{padding-top: 20px;}
+.column-left{width: 48%; float: left;}
+.column-right{width: 48%; float: right;}
+.content-box-header{background:#353535; padding: 10px;}
+.content-box-header h3{color: #fff; font-size: 18px;}
+.column-right p, .column-left p{font-size: 14px;border-bottom: 1px solid #E9E9E9; padding: 10px 3px; margin: 0}
+
+/*主页头部*/
+.nav-tabs>.active{
+
+}
+/*列表表格*/
+.table>thead>tr>th{background:#E8E8E8; border-bottom: 0 ;font-size: 14px;}
+.table>tbody>tr>td,.table>tfoot>tr>td{border-top:0}
+.table>tbody>.alt-row{background: #F9F9F9}
+.breadcrumb{margin-top: 10px; margin-bottom: 0; border-radius: 0;background-color:#e5e5e5}
+
+.page-header{padding-bottom: 0; margin-top: 15px; margin-bottom: 10px}
+.page-header.page-header1{margin-bottom: 0}
+.page-header h3{float: left; margin-top: 6px; color: #495b79;margin-left: 10px;;font-size: 15px;}
+.page-header .nav{float: right; font-size: 13px; border-bottom: none;}
+.bulk-actions{margin: 20px 0;width:10% }
+/* table tfoot*/
+.bulk-actions .dishes-move select{width:20% !important;display:inline-block !important;}
+
+/*分页样式*/
+.pagination {text-align: right;padding: 5px 0 0px 0;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px}
+.pagination a.number, #go { border: 1px solid #ddd;}
+.pagination a.current, #go { background: #4B9802;border-color: #4B9802 !important;color: #fff !important;}
+.pagination a.current:hover {text-decoration: underline;}
+.pagination #go{cursor:pointer;height:22px;}
+.pagination #page_num{ width:30px;height:18px;border:1px solid #ccc}
+
+/**结尾样式**/
+.footer{border-top:1px solid #ccc;margin:40px 0 0 0;padding:20px 0; font-size: 12px}
+
+
+/********************************      样式扩展      ********************************/
+
+/**通用小部件**/
+.type-attr{overflow: hidden; margin-bottom: 5px}
+.prompt-div{color:#999;width: 90%; margin-top: 5px}
+.prompt-red{color: red; padding: 0 10px}
+.arrow{float: right; font-size: 12px; position: absolute; top: 16px; right: 15px}
+.bg-info{background: #ebeef2!important}
+.info-box{margin-bottom:20px; border-radius: 4px}
+.info-box .info-icon{display: inline-block; width: 28%; text-align: center; padding: 20px;}
+.info-box span.icon{font-size: 36px; color: #fff}
+.info-details{display: inline-block; width: 70%; padding-left: 3%; padding-right: 3%}
+.info-details h4{font-size: 14px;}
+.bg-info-dark{background: #5dd0ed!important}
+#plus-input,.minus-input,.spec{margin:8px 0 0 10px; font-size: 14px; cursor:pointer;}
+.spec{position: relative}
+.spec span{position: absolute; left: 0; top: 4px}
+.u-img-icon{font-style: normal; font-size: 14px; color: #666; margin-right: 10px; cursor: pointer}
+.u-img-input{margin-top: 7px}
+/*全局按钮样式*/
+.button{display:inline-block;background: #4B9802;border:1px solid #fff !important;padding:5px 15px !important; color: #fff}
+.button:hover{background: #459300}
+.btn{color: #fff}
+.add .icon ,.modify .icon,.delete-delete .icon{color: #000; font-size: 14px;}
+.delete-batch{background: #d9534f;}
+.delete-batch:hover{background: red; color: #fff}
+.derive,.btn-green{background: #8fce35}
+.derive:hover,.btn-green:hover{background: #459300; color: #fff}
+.atrous{background: #42474D}
+.atrous:hover{background: #333}
+
+
+.form-horizontal{width:98%; margin-top: 20px;border: 0px solid #000}
+.form-horizontal.admin-group{width: 100%}
+.form-horizontal .group-name{width: 306px}
+.form-group{margin-bottom: 15px}
+.form-horizontal .tiny-input{width: 15% !important;}
+.form-horizontal .small-input{width: 10% !important;}
+.form-horizontal .medium-input{width: 50% !important;}
+.form-horizontal .large-input{width: 90% !important;}
+.form-control{width: 40%}
+
+/*select*/
+.form-control-select{width: 30%}
+.form-control-select1{width: 12%; float: left; margin-right: 10px;}
+.attr-s input{width: 6%; float: left;}
+.attr-s label{float: left;}
+.input-small{width:15%}
+
+
+.label.red{background:#c00;}
+.label.green{background:#779500}
+.label.orange{background: #f0ad4e}
+.label.blue{background: #09c}
+
+/*是否显示颜色设置*/
+.txt-red{color:#c00; }
+.txt-grren{color:#779500 }
+.txt-yellow{color: #FE820C}
+.txt-blue{color:#428BCA}
+.is-show-operate{cursor: pointer;}
+
+.checkbox input[type="checkbox"]{position: static; margin: 0}
+
+/*广告图片大小*/
+.ad_pic{width:500px; overflow: hidden; margin-top: 10px;}
+.ad_pic img{max-width: 500px; max-height: 200;}
+.ad-fixed{max-width: 800px; height: auto;}
+.goods-img{max-width: 428px; max-height: 428px; margin-top: 10px}
+.goods-img img{max-width: 428px; height: auto;}
+.cate-img{max-width: 100px; max-height: 100px;margin-top: 10px}
+.cate-img img{max-width: 100px; height: auto;}
+
+/*教师身份证  职称证*/
+.card{width: 380px; float: left}
+.card img{width: 360px; height: 210px;}
+.tea_cert img{max-width: 700px; height: auto}
+
+/*上传*/
+#upload_logo{position:absolute;top: 0px; right: 20px;}
+#upload_cover{position:absolute;top: 170px; right: 20px;}
+#upload_cover #cover{width: 128px; height: 200px;}
+#upload_cover #cover img{width: 128px; height: 200px;}
+
+/*列表全选背景色*/
+#main-content tbody tr.row-select{background: #CBE3ED}
+#main-content tbody tr.mouse-in{background:#F5F5F5;}
+
+/*搜索框  及其中表单的样式*/
+.search-form .input-sm{margin-right: 12px}
+.search-content{ padding: 10px 0 10px 0px;}
+.search-content .small-input{ width: 15% !important;}
+
+/**时间矿背景**/
+.start-time,.end-time{width: 100px;}
+
+/**折线 饼状图**/
+.line-container{min-width:310px;min-height:480px; margin-top:20px;height:480}
+#pie-container{width:450px; height:450px; margin-top:40px; margin-left: 5px;float:left;}
+#pie-container-1{width:450px; height:450px; margin-top:40px; margin-left: 15px;float:left;}
+
+/** 专为微信回复列表查询配置 **/
+.tab-content .search-content .small-input{width: 36% !important;}
+.search-content .search-input{background:url('../images/icons/search.png') no-repeat;text-indent:18px;}
+
+/**不同时间段统计**/
+.content-box input.text-input{padding:6px; border: 1px solid #d5d5d5; color: #333; font-size: 13px; cursor: pointer;}
+.content-box .main-time{padding: 15px 0 15px 20px;font-size: 14px; border-bottom: 1px dashed #ccc;}
+.content-box .main-time span{position: relative;}
+.content-box .main-time .icon{position: absolute; right: 3px; top: 0; font-size: 22px; color: #42474D}
+
+.content-box-content .clock-div input{background: url('../images/icons/clock.png') no-repeat;background-position:73px,10px;width:100px !important;}
+
+/**会员详情页头像与文字**/
+.tab-content .pic-text-div{padding: 20px 0 0 0;border: 0px solid #000; width:550px;}
+.tab-content .pic-text-div .p-text{border: 0px solid #000;width:360px;float: left; margin-top: 3px; margin-left: 20px; padding: 0 0 20px 0;}
+.tab-content .pic-text-div .p-pic{float: left;padding: 3px;border: 1px solid #ccc;}
+
+/** 需要有下划线的超链接 **/
+a.underline{text-decoration: underline;}
+
+/** 广告浮动图片div样式 **/
+.img-position{border: 1px solid #222222; background: #222222;padding: 5px;position: absolute;top:0px;left: 0px; z-index: 99999999}
+/** 广告浮动图片指向图样式 **/
+.img-position .point{position:absolute;top:32px;left:-15px;z-index: 99999999}
+
+/** 订单浮动 **/
+.content-box-content .order-position{position: absolute;top:0px;left:0px;padding:0;width:50%}
+.content-box-content .order-bg{width:100%;height:100%;position: absolute;top:-2px;left:-2px;z-index:10;}
+/** 订单详情table **/
+.content-box-content .order-info{border:1px solid #ccc;width:100%;}
+.content-box-content .order-info th{background:#ededed;font-weight:bold;height:30px;padding:0 0 0 5px}
+.content-box-content .order-info td{border-bottom:1px solid #ccc;vertical-align: middle;background:#fff;padding:2px 0 2px 5px}
+
+/** 用户信息浮动 **/
+.content-box-content .m-info-position{position: absolute;top:0px;left:0px;padding:0;width:30%}
+.content-box-content .m-info-bg{width:100%;height:100%;position: absolute;top:-2px;left:-2px;z-index:10;}
+/** 详情table **/
+.content-box-content .m-info-info{border:1px solid #ccc;width:100%;}
+.content-box-content .m-info-info th{background:#ededed;font-weight:bold;height:30px;padding:0 0 0 5px}
+.content-box-content .m-info-info td{border-bottom:1px solid #ccc;vertical-align: middle;background:#fff;padding:10px 0 10px 10px}
+
+/** 排序输入框 **/
+.sort_order,.grade,.goods_stock{ width:40px;}
+
+/**列表中可修改输入框**/
+.follow-input{ border:none;border-bottom:1px solid #999;}
+.follow-input-select{ background:#CBE3ED;}
+.follow-mouse-in{ background:#F5F5F5;}
+/**奇数行输入框背景 **/
+.odd-input{ background:#F9F9F9;}
+
+/** 大文本框 **/
+.text-area{ width:45% !important; height:150px !important;padding: 10px 0 0 10px;}
+
+/** 提示样式 **/
+.prompt{color: #999;}
+
+/** 微信api链接教程文字提示 **/
+.explain{font-size:18px;background-color: #ededed;color:#58A002; padding:15px 0 15px 10px;}
+
+/** 微信回复列表中 纯文本回复...等字样 鼠标进入等效果**/
+.wchart-replay{float: right; padding: 20px 0 20px 0;text-align: center;width:140px;border: 2px dashed #ccc; margin-right: 20px;font-size: 15px;cursor: pointer;}
+.wchart-replay:hover{background-color: #ededed;}
+.wchart-replay a{color: #666;}
+
+.content-box-content .help {cursor: pointer}
+
+.is_ok{ cursor: pointer; }
+
+.pay-file-btn {
+    background: url("../images/pay_1.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    cursor: pointer;
+    height: 30px;
+    vertical-align: middle;
+    width: 100px;
+}
+.pay_file {
+    display: none;
+}
+
+/*相册图片*/
+.gallery-list {overflow: hidden; margin-bottom: 10px;}
+.gallery-list .gallery-thumb{float: left; position: relative; padding: 20px 5px}
+.gallery-list .gallery-thumb a{position: absolute; left: 50%; top: 0; margin-left: -5px; font-size: 14px; cursor: pointer;}
+.gallery-list .gallery-thumb img{max-width: 100px; max-height: 100px;}

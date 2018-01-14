@@ -1,0 +1,110 @@
+[ 2017-05-29T18:55:14+08:00 ] ::1 /api/index.php?s=/Admin/Vorder/vorderlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003683s ]
+SQL: SHOW COLUMNS FROM `js_teac` [ RunTime:0.019959s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined variable: request /Applications/XAMPP/xamppfiles/htdocs/api/Application/Runtime/Cache/Admin/70c22086c0423a0e1326bcc1c2d8902c.php 第 38 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/api/Application/Runtime/Cache/Admin/70c22086c0423a0e1326bcc1c2d8902c.php 第 63 行.
+NOTIC: [8] Undefined variable: page /Applications/XAMPP/xamppfiles/htdocs/api/Application/Runtime/Cache/Admin/70c22086c0423a0e1326bcc1c2d8902c.php 第 95 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-05-29T18:55:16+08:00 ] ::1 /api/index.php?s=/Admin/Teac/teaclist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `js_teac` [ RunTime:0.004757s ]
+NOTIC: [8] Undefined index: name /Applications/XAMPP/xamppfiles/htdocs/api/Application/Admin/Controller/TeacController.class.php 第 22 行.
+SQL: SELECT * FROM `js_teac` WHERE ( `status` <> 9 )  [ RunTime:0.008921s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: request /Applications/XAMPP/xamppfiles/htdocs/api/Application/Runtime/Cache/Admin/3fb4e25794c3ef101f0e928cfb369dd7.php 第 39 行.
+NOTIC: [8] Undefined variable: page /Applications/XAMPP/xamppfiles/htdocs/api/Application/Runtime/Cache/Admin/3fb4e25794c3ef101f0e928cfb369dd7.php 第 96 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-05-29T18:55:17+08:00 ] ::1 /api/index.php?s=/Admin/Teac/addteac
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `js_teac` [ RunTime:0.003774s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: res /Applications/XAMPP/xamppfiles/htdocs/api/Application/Runtime/Cache/Admin/f509cf154c6f8f588e1cea110ef80e69.php 第 99 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2017-05-29T20:39:33+08:00 ] ::1 /api/index.php?s=/Teach/Jkc/addjkc/kid/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001571s ]
+SQL: SHOW COLUMNS FROM `js_jkcv` [ RunTime:0.015149s ]
+SQL: SHOW COLUMNS FROM `js_jkc` [ RunTime:0.003730s ]
+SQL: SHOW COLUMNS FROM `js_kc` [ RunTime:0.003612s ]
+SQL: SHOW COLUMNS FROM `js_inpic` [ RunTime:0.003724s ]
+SQL: SHOW COLUMNS FROM `js_house` [ RunTime:0.003412s ]
+SQL: SELECT * FROM `js_house` WHERE ( `status` <> 9 )  [ RunTime:0.000411s ]
+SQL: SELECT * FROM `js_kc` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.005246s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002239s ]
+
+[ 2017-05-29T21:19:13+08:00 ] ::1 /api/index.php?s=/Teach/Jkc/addjkc/kid/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001951s ]
+SQL: SHOW COLUMNS FROM `js_jkcv` [ RunTime:0.007642s ]
+SQL: SHOW COLUMNS FROM `js_jkc` [ RunTime:0.002617s ]
+SQL: SHOW COLUMNS FROM `js_kc` [ RunTime:0.004149s ]
+SQL: SHOW COLUMNS FROM `js_inpic` [ RunTime:0.003847s ]
+SQL: SHOW COLUMNS FROM `js_house` [ RunTime:0.003549s ]
+SQL: SELECT * FROM `js_house` WHERE ( `status` <> 9 )  [ RunTime:0.000355s ]
+SQL: SELECT * FROM `js_kc` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001538s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001710s ]
+

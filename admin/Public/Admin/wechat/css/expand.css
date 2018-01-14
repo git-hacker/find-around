@@ -1,0 +1,191 @@
+/********************************      样式扩展      ********************************/
+/*搜索框  及其中表单的样式*/
+#main-content .search-content{
+    padding: 10px 0 10px 0px;
+}
+#main-content .search-content .small-input{
+    width: 15% !important;
+}
+/** 专为微信回复列表查询配置 **/
+#main-content .tab-content .search-content .small-input{
+    width: 36% !important;
+}
+#main-content .search-content .search-input{
+    background:url('../images/icons/search.png') no-repeat;
+    text-indent:18px;
+}
+
+/****表单样式****/
+#main-content .tab-content .form-form{
+    margin-left: 10px;
+}
+/****添加表单的输入框前文字****/
+#main-content .tab-content .label{
+    color: #333333;
+    font-size: 14px;
+    font-family: '宋体';
+}
+
+/*******首页介绍*****/
+#main-content .column-right p, .column-left p{
+    padding: 7px;
+    font-size: 14px;
+    border-bottom: 1px solid #E9E9E9;
+}
+/**不同时间段统计**/
+#main-content .content-box .search{
+    padding: 15px 0 15px 20px;
+    font-size: 14px;
+    border-bottom: 1px dashed #ccc;
+}
+/**折线 饼状图**/
+#main-content .content-box #line-container{
+    min-width:310px;
+    min-height:620px;
+    margin-top:20px;
+}
+#main-content .content-box #pie-container{
+    width:450px;
+    height:450px;
+    margin-top:40px;
+    margin-left: 5px;
+    float:left;
+}
+/**时间矿背景**/
+#main-content .content-box #start-time,#end-time{
+    background: url(../images/icons/rili.png) no-repeat;
+    background-position: 5px 0px;
+    cursor: pointer;
+}
+
+/**会员详情页头像与文字**/
+#main-content .tab-content .pic-text-div{
+    padding: 20px 0 0 0;
+    border: 0px solid #000;
+    width:550px;
+}
+#main-content .tab-content .pic-text-div .p-text{
+    border: 0px solid #000;
+    width:360px;
+    float: left;
+    margin-top: 3px;
+    margin-left: 20px;
+    padding: 0 0 20px 0;
+}
+#main-content .tab-content .pic-text-div .p-pic{
+    float: left;
+    padding: 3px;
+    border: 1px solid #ccc;
+}
+
+/** 需要有下划线的超链接 **/
+#main-content a.underline{
+    text-decoration: underline;
+}
+
+/** 是否显示图标 **/
+#main-content .is-show-operate{
+    cursor: pointer;
+}
+
+/** 广告浮动图片div样式 **/
+#main-content .img-position{
+    border: 1px solid #222222;
+    background: #222222;
+    padding: 5px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+/** 订单浮动 **/
+#main-content .order-position{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    padding: 0;
+    border: 1px solid #666;
+    width:60%
+}
+#main-content .order-bg{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:-2px;
+    left: -2px;
+    border: 0px solid red;
+    z-index: 10;
+}
+/** 广告浮动图片指向图样式 **/
+#main-content .img-position .point{
+    position:absolute;top:32px;left:-15px;
+}
+
+/** 大文本框 **/
+#main-content .text-area{
+    width:45% !important;
+    height:150px !important;
+    padding: 10px 0 0 10px;
+}
+
+/** 提示样式 **/
+#main-content .prompt{
+    color: #999;
+}
+
+/** 列表中排序输入框的宽度 **/
+#main-content .sort_order{
+    width: 30px;
+}
+
+/**列表中可修改输入框**/
+.follow-input{
+    border:none;
+    border-bottom:1px solid #999;
+}
+.follow-input-select{
+    background:#DBEDB4;
+}
+.follow-mouse-in{
+    background:#D6D8D9;
+}
+/**奇数行输入框背景 **/
+.odd-input{
+    background:#f5f5f5;
+}
+
+/** 微信api链接教程文字提示 **/
+#main-content .explain{
+    font-size:18px;
+    background-color: #ededed;
+    color:#58A002;
+    padding:15px 0 15px 10px;
+}
+/** 微信回复列表中 纯文本回复...等字样 鼠标进入等效果**/
+#main-content .wchart-replay{
+    float: right;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    width:140px;
+    border: 2px dashed #ccc;
+    margin-right: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#main-content .wchart-replay:hover{
+    background-color: #ededed;
+}
+#main-content .wchart-replay a{
+    color: #666;
+}
+/** 订单详情table **/
+#main-content .order-info{
+    border: 1px solid #ccc;
+}
+#main-content .order-info th{
+    background:#ededed;
+    font-weight: bold;
+}
+#main-content .order-info td{
+    border-bottom: 1px solid #ccc;
+    vertical-align: middle;
+}

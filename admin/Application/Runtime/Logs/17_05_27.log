@@ -1,0 +1,1443 @@
+[ 2017-05-27T15:55:25+08:00 ] ::1 /api/index.php?s=/Teac
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004088s ]
+ERR: 无法加载控制器:Teac
+
+[ 2017-05-27T15:55:34+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.012697s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.001138s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2017-05-27T15:56:31+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002019s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000115s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-05-27T15:57:13+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002865s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000190s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2017-05-27T15:57:36+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002783s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000240s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2017-05-27T15:57:58+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.001833s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000110s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-05-27T15:58:37+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.001889s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000131s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2017-05-27T15:59:55+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.003501s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000172s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.005663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-05-27T16:00:09+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002214s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000164s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.005043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-05-27T16:02:16+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001949s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002288s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000159s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000936s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2017-05-27T16:03:05+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001790s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002209s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000149s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000951s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001975s ]
+
+[ 2017-05-27T16:03:56+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.001914s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000135s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.003785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2017-05-27T16:03:59+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002403s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000353s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2017-05-27T16:12:08+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001887s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.004198s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000134s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001774s ]
+
+[ 2017-05-27T16:12:10+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002664s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000146s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.003304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2017-05-27T16:12:16+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.003450s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000217s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2017-05-27T16:13:31+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002120s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000144s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2017-05-27T16:16:13+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002480s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.004278s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000267s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2017-05-27T16:16:15+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002127s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000225s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.005034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2017-05-27T16:18:19+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003322s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.003201s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000178s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000925s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001812s ]
+
+[ 2017-05-27T16:21:16+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001615s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.004533s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000206s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2017-05-27T16:24:21+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002170s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.004498s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000151s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2017-05-27T16:25:31+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.001807s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000140s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2017-05-27T16:26:50+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Teach/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002058s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000153s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2017-05-27T17:03:00+08:00 ] ::1 /api/index.php?s=/Teach
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002034s ]
+
+[ 2017-05-27T17:03:00+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+ERR: 无法加载控制器:Teac
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002075s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+
+[ 2017-05-27T17:04:18+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+
+[ 2017-05-27T17:04:19+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+
+[ 2017-05-27T17:04:19+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+
+[ 2017-05-27T17:04:20+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+
+[ 2017-05-27T17:04:26+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001705s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+
+[ 2017-05-27T17:04:44+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+
+[ 2017-05-27T17:05:34+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+
+[ 2017-05-27T17:05:38+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000252s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+
+[ 2017-05-27T17:05:46+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-05-27T17:06:11+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001874s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001790s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002079s ]
+
+[ 2017-05-27T19:13:16+08:00 ] ::1 /api/index.php?s=/Teach/Teac/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001611s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003617s ]
+

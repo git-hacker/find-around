@@ -1,0 +1,13 @@
+<!-- 时间选择插件 start-->
+<script type="text/javascript" src="__WEBPUBLIC__/Common/ClockPicker/bootstrap-clockpicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="__WEBPUBLIC__/Common/ClockPicker/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="__WEBPUBLIC__/Common/ClockPicker/bootstrap-clockpicker.min.css">
+<!-- 时间选择插件 end-->
+
+
+<div class="input-group clockpicker" style="width: 200px;margin-left: 100px;">
+    <input type="text" class="text-input small-input" style="border:1px solid #ccc;width:224px;height:25px;background:url('__WEBPUBLIC__/Admin/images/icons/clock_bg.png')">
+</div>
+<script type="text/javascript">
+$('.clockpicker').clockpicker().find('input').change(function(){ console.log(this.value); });
+</script>

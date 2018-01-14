@@ -1,0 +1,51 @@
+<include file="Public:header"/>
+<!--主页面-->
+<div id="main-content" class="content">
+    <ul class="breadcrumb">
+        <li><a href="/">首页</a></li>
+        <li class="active"><a href="">管理员</a></li>
+        <li class="active">添加管理员</li>
+    </ul>
+
+    <div class="page-header clearfix">
+        <h3>管理员</h3>
+        <ul class="nav nav-tabs">    
+            <li>
+                <a href="{:U('Admin/adminList')}">管理员列表</a>
+            </li>
+            <li class="active">
+                <a href="{:U('Admin/addAdmin')}">添加管理员</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content-box-content">
+        <form action="{:U('Admin/addAdmin')}" method="post" class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="account" class="col-sm-3 control-label">账　　号：</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="account" name="account">
+                </div>
+            </div>   
+            <div class="form-group">
+                <label for="password" class="col-sm-3 control-label">密　　码：</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" id="password" name="password">
+                </div>
+            </div> 
+            <div class="form-group">
+                <label for="re_password" class="col-sm-3 control-label">确认密码：</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" id="re_password" name="re_password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <button type="submit" class="btn btn-default btn-primary">确认添加</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<include file="Public:footer"/>

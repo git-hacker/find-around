@@ -1,0 +1,99 @@
+<include file="Public:header"/>
+<script type="text/javascript" src="__WEBPUBLIC__/Common/Highcharts/highcharts.js"></script>
+<script type="text/javascript" src="__WEBPUBLIC__/Common/Highcharts/exporting.js"></script>
+<!-- 统计图主题 可自行开发 -->
+<script type="text/javascript" src="__WEBPUBLIC__/Common/Highcharts/highcharts-theme.js"></script>
+<!--时间-->
+<script type="text/javascript" src="__WEBPUBLIC__/Common/DatePicker/lhgcore.js"></script>
+<script type="text/javascript" src="__WEBPUBLIC__/Common/DatePicker/lhgcalendar.js"></script>
+<script type="text/javascript">
+    /** 折线图 **/
+    $(function () {
+        $('#line-container').highcharts({
+            chart: {type: 'spline'},
+            title: {text: '', x: -20 ,style: {color: '#1B3243',fontWeight: 'bold',fontSize: '25px'}},
+            subtitle: { text: "{$day_date_flag}" ,x: -20,y:22},
+            xAxis: { categories: [{$x_date}], labels: { align: 'center', step: {$step} }},
+            yAxis: {
+                title: {
+                    text: "{$title}"
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: "#808080"
+                }]
+            },
+            tooltip: {crosshairs: true,shared: true},
+            plotOptions: {spline: {marker: { radius: 4,lineColor: '#666666',lineWidth: 1 }}},
+            series: [{$day_line}]
+        });
+        $('#line-container-1').highcharts({
+            chart: {type: 'spline'},
+            title: {text: '', x: -20 ,style: {color: '#1B3243',fontWeight: 'bold',fontSize: '25px'}},
+            subtitle: { text: "{$month_date_flag}" ,x: -20,y:22},
+            xAxis: { categories: [{$month_x_date}], labels: { align: 'center' }},
+            yAxis: {
+                title: {
+                    text: "{$title}"
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: "#808080"
+                }]
+            },
+            tooltip: {crosshairs: true,shared: true},
+            plotOptions: {spline: {marker: { radius: 4,lineColor: '#666666',lineWidth: 1 }}},
+            series: [{$month_line}]
+        });
+    });
+</script>
+<!--主页面-->
+<div id="main-content" class="content">
+    <if condition="!empty($group)">
+        <div class="notification information png_bg">
+            <div>
+                您属于【{$group}】组，可能部分功能没有使用权限！
+            </div>
+        </div>
+    </if>
+    <h3 class="page-title">
+        <span class="icon glyphicon glyphicon-home"></span>
+        首页
+    </h3>
+
+    <div class="content-box">
+        <!--表格内容-->
+        <div class="content-box-content">
+            <div class="main-time">
+                <form action="{:U('Index/main')}" method="post" class="form1">
+                    <span><input type="text" id="start-time" name="start_time" class="text-input" style="width:270px;"  value="{$start_time}" placeholder="起始时间" onclick="J.calendar.get({to:'end-time,min'});" onfocus="this.blur()"/><i class="icon glyphicon glyphicon-calendar start-time-icon"></i></span>　
+                    <span class="text-input"><input type="text" id="end-time" name="end_time"class="text-input" style="width:270px;" value="{$end_time}" placeholder="结束时间" onclick="J.calendar.get({to:'start-time,max'});"  onfocus="this.blur()" /><i class="icon glyphicon glyphicon-calendar end-time-icon"></i></span>　
+                    <input class="button atrous" type="submit" value="确定" />
+                </form>
+            </div>
+            <!--折线图-->
+            <div id="line-container" class="line-container"></div>
+            <!--月 图-->
+            <div class="main-time">
+                <form action="{:U('Index/main')}" method="post" class="form2">
+                    选择年份：{$year_sel}
+                    <input class="button atrous" type="submit" value="确定" />
+                </form>
+            </div>
+            <div id="line-container-1" class="line-container"></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="content-box-column">
+
+    </div>
+
+    <div class="clear"></div>
+    <div id="footer" class="footer">
+        <small><a href="#">返回顶部</a> </small>
+    </div>
+</div>
+<include file="Public:footer"/>

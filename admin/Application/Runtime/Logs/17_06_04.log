@@ -1,0 +1,417 @@
+[ 2017-06-04T08:50:59+08:00 ] ::1 /api/index.php?s=/Admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+
+[ 2017-06-04T08:50:59+08:00 ] ::1 /api/index.php?s=/Admin/Manager/newLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000966s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2017-06-04T08:50:59+08:00 ] ::1 /api/index.php?s=/Admin/Manager/verify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2017-06-04T08:51:00+08:00 ] ::1 /api/index.php?s=/Admin/Manager/checkAccount
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `js_admin` [ RunTime:0.003580s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/api/Application/Admin/Model/AdminModel.class.php 第 77 行.
+SQL: SELECT * FROM `js_admin` WHERE ( `account` = 'admin' ) AND ( `status` <> '9' ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: UPDATE `js_admin` SET `a_id`=1,`account`='admin',`password`='e10adc3949ba59abbe56e057f20f883e',`group_id`=0,`ctime`=0,`utime`=0,`last_login_time`=1496537460,`last_login_ip`='::1',`status`=0 WHERE ( `account` = 'admin' ) [ RunTime:0.004183s ]
+NOTIC: [8] Use of undefined constant Json - assumed 'Json' /Applications/XAMPP/xamppfiles/htdocs/api/Application/Admin/Controller/AdminBasicController.class.php 第 90 行.
+
+[ 2017-06-04T08:51:00+08:00 ] ::1 /api/index.php?s=/Admin/Manager/doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `js_admin` [ RunTime:0.002750s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/api/Application/Admin/Model/AdminModel.class.php 第 77 行.
+SQL: SELECT * FROM `js_admin` WHERE ( `account` = 'admin' ) AND ( `status` <> '9' ) LIMIT 1   [ RunTime:0.000312s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/api/Application/Admin/Model/AdminModel.class.php 第 77 行.
+SQL: SELECT * FROM `js_admin` WHERE ( `account` = 'admin' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) AND ( `status` <> '9' ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: UPDATE `js_admin` SET `last_login_time`=1496537460,`last_login_ip`='::1' WHERE ( `a_id` = 1 ) [ RunTime:0.002440s ]
+NOTIC: [8] Use of undefined constant Json - assumed 'Json' /Applications/XAMPP/xamppfiles/htdocs/api/Application/Admin/Controller/AdminBasicController.class.php 第 90 行.
+
+[ 2017-06-04T08:51:00+08:00 ] ::1 /api/index.php?s=/Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2017-06-04T08:51:01+08:00 ] ::1 /api/index.php?s=/Admin/Index/left
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2017-06-04T08:51:01+08:00 ] ::1 /api/index.php?s=/Admin/Index/top
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `js_admin` [ RunTime:0.001509s ]
+SQL: SELECT * FROM `js_admin` WHERE ( `a_id` = 1 ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `js_notice` [ RunTime:0.002504s ]
+ERR: 1146:Table 'jians.js_notice' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_notice`
+SQL: SELECT COUNT(*) AS tp_count FROM `js_notice` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000185s ]
+ERR: 1146:Table 'jians.js_notice' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `js_notice` WHERE ( `status` = 1 ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002098s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002174s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002321s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Applications/XAMPP/xamppfiles/htdocs/api/ThinkPHP/Library/Think/View.class.php:95) /Applications/XAMPP/xamppfiles/htdocs/api/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Applications/XAMPP/xamppfiles/htdocs/api/ThinkPHP/Library/Think/View.class.php:95) /Applications/XAMPP/xamppfiles/htdocs/api/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Applications/XAMPP/xamppfiles/htdocs/api/ThinkPHP/Library/Think/View.class.php:95) /Applications/XAMPP/xamppfiles/htdocs/api/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2017-06-04T08:51:01+08:00 ] ::1 /api/index.php?s=/Admin/Inpic/inpiclist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `js_inpic` [ RunTime:0.003425s ]
+SQL: SELECT * FROM `js_inpic` WHERE ( `status` <> 9 )  [ RunTime:0.002127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: request /Applications/XAMPP/xamppfiles/htdocs/api/Application/Runtime/Cache/Admin/7cbf8edb5ba8e6e999d01686d8a957c7.php 第 39 行.
+NOTIC: [8] Undefined variable: page /Applications/XAMPP/xamppfiles/htdocs/api/Application/Runtime/Cache/Admin/7cbf8edb5ba8e6e999d01686d8a957c7.php 第 79 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2017-06-04T08:51:11+08:00 ] ::1 /api/index.php?s=/Admin/Vorder/vorderlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `js_teac` [ RunTime:0.003571s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: request /Applications/XAMPP/xamppfiles/htdocs/api/Application/Runtime/Cache/Admin/70c22086c0423a0e1326bcc1c2d8902c.php 第 38 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/api/Application/Runtime/Cache/Admin/70c22086c0423a0e1326bcc1c2d8902c.php 第 63 行.
+NOTIC: [8] Undefined variable: page /Applications/XAMPP/xamppfiles/htdocs/api/Application/Runtime/Cache/Admin/70c22086c0423a0e1326bcc1c2d8902c.php 第 95 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2017-06-04T10:09:17+08:00 ] ::1 /api/index.php?s=/Admin/Teac/teaclist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `js_teac` [ RunTime:0.002348s ]
+SQL: SELECT * FROM `js_teac` WHERE ( `status` <> 9 )  [ RunTime:0.000258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: request /Applications/XAMPP/xamppfiles/htdocs/api/Application/Runtime/Cache/Admin/3fb4e25794c3ef101f0e928cfb369dd7.php 第 39 行.
+NOTIC: [8] Undefined variable: page /Applications/XAMPP/xamppfiles/htdocs/api/Application/Runtime/Cache/Admin/3fb4e25794c3ef101f0e928cfb369dd7.php 第 99 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000947s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001943s ]
+
+[ 2017-06-04T10:14:03+08:00 ] ::1 /api/index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+
+[ 2017-06-04T10:14:39+08:00 ] ::1 /api/index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+
+[ 2017-06-04T10:14:41+08:00 ] ::1 /api/index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2017-06-04T10:14:51+08:00 ] ::1 /api/index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Home/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002077s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000162s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2017-06-04T10:14:57+08:00 ] ::1 /api/index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Home/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.001843s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000150s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2017-06-04T10:16:39+08:00 ] ::1 /api/index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Home/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002084s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000229s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.003859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-06-04T10:17:05+08:00 ] ::1 /api/index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Home/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002153s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000153s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-06-04T10:24:12+08:00 ] ::1 /api/index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Home/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.001968s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000158s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2017-06-04T10:24:29+08:00 ] ::1 /api/index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Home/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.001784s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000252s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.005826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2017-06-04T10:33:45+08:00 ] ::1 /api/index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Home/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002057s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000155s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2017-06-04T10:34:40+08:00 ] ::1 /api/index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Home/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.003174s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000450s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.003754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2017-06-04T10:35:17+08:00 ] ::1 /api/index.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+NOTIC: [8] Undefined index: article_id /Applications/XAMPP/xamppfiles/htdocs/api/Application/Home/Controller/IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `js_article` [ RunTime:0.002413s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `js_article`
+SQL: SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1   [ RunTime:0.000468s ]
+ERR: 1146:Table 'jians.js_article' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `js_article` WHERE ( `article_id` = null ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.005648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
