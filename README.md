@@ -1,5 +1,8 @@
-# ![LOGO](https://mapxcx.kanziqiang.top/img/1.png)（Find周边）
-* 团队成员： 阚自强、宋佳欣、董春侠、马丁
+# ![LOGO](https://mapxcx.kanziqiang.top/img/1.png) 
+
+###[Find周边](https://v.qq.com/x/page/l05336gscsd.html) ### 视频演示（语音识别需要真机）
+
+* 团队成员： 阚自强、宋嘉欣、董春侠、马丁
 
 
 据说颜值高的都是路痴!
@@ -59,7 +62,6 @@
 * minicode		--	--	前端小程序代码
 * README.md 	--	--	项目说明文档
 * mapxcx.sql 	--	--	数据库文件
-
 
 ## 本地部署
 
