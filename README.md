@@ -1,6 +1,8 @@
 # ![LOGO](https://mapxcx.kanziqiang.top/img/1.png) 
 
-###[Find周边](https://v.qq.com/x/page/l05336gscsd.html) ### 视频演示（语音识别需要真机）
+### [Find周边](https://v.qq.com/x/page/l05336gscsd.html){:target="_blank"}  
+
+> 视频演示（语音识别需要真机）
 
 * 团队成员： 阚自强、宋嘉欣、董春侠、马丁
 
