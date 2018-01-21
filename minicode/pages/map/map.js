@@ -1,7 +1,6 @@
 // pages/map/map.js
 const app = getApp();
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -23,11 +22,62 @@ Page({
    */
   onLoad: function (options) {
     var marker = wx.getStorageSync('markers')
+    console.log(marker)
     var markers = [];
+    var citysrc = {
+      "报刊亭": "baoting",
+      "面包甜点":"mianbao",
+      "冷饮店": "lengyin",
+      "小吃快餐": "xiaochi",
+      "超市": "chaoshi",
+      "农贸市场": "cai",
+      "邮局": "youju",
+      "中国电信营业厅": "dianxin",
+      "中国移动营业厅": "yidong",
+      "中国联通营业厅": "liantong",
+      "洗衣店": "xiyi",
+      "美容美发": "meirong",
+      "KTV": "KTV",
+      "酒吧": "jiuba",
+      "网吧": "wangba",
+      "加油站": "jiayouzhan",
+      "洗车场": "xiche",
+      "博物馆": "bowuguan",
+      "科技馆": "keji",
+      "图书馆": "tushu",
+      "美术馆": "meishu",
+      "大学": "daxue",
+      "中学": "zhongxue",
+      "小学": "xiaoxue",
+      "中国银行": "zhongguo",
+      "建设银行": "jianshe",
+      "农业银行": "nongye",
+      "上海银行": "shanghai",
+      "住宅小区": "xiaoqu",
+      "别墅": "bieshu",
+      "服务区": "fuwuqu",
+      "公共厕所": "gongce",
+      "公用电话": "gongyongdianhua",
+      "公交车站":"gongjiaochezhan",
+      "地铁站": "ditiezhan",
+      "火车站": "huochezhan",
+      "长途汽车站": "changtu",
+      "药房药店": "yaofang",
+      "综合医院": "yiyuan",
+      "长途汽车站": "changtu",
+      "酒店宾馆": "jiudian"      
+    };
     //循环取出符合map组件的marker数据
+    var obj = {};
     for (var i in marker) {
       var cur = marker[i];
-      var obj = {
+      var str = cur.category ? cur.category.split(":").pop() : "";
+      if (citysrc[str]) {
+        obj.iconPath = "/img/" + citysrc[str] + ".png";
+      } else {
+        obj.iconPath = "/img/8.png"; 
+      }
+      obj = {
         id: i,
         latitude: cur.location.lat,
         longitude: cur.location.lng,
@@ -37,92 +87,6 @@ Page({
         label: { content: cur.title, color: "#1AAD19" },
         address: "距离：" + cur._distance + "米"
       };
-      if (cur.category.indexOf("报刊亭") != -1) {
-        obj.iconPath = "/img/baoting.png";
-      } else if (cur.category.indexOf("面包甜点") != -1) {
-        obj.iconPath = "/img/mianbao.png";
-      } else if (cur.category.indexOf("冷饮店") != -1) {
-        obj.iconPath = "/img/lengyin.png";
-      } else if (cur.category.indexOf("小吃快餐") != -1) {
-        obj.iconPath = "/img/xiaochi.png";
-      } else if (cur.category.indexOf("超市") != -1) {
-        obj.iconPath = "/img/chaoshi.png";
-      } else if (cur.category.indexOf("农贸市场") != -1) {
-        obj.iconPath = "/img/cai.png";
-      } else if (cur.category.indexOf("邮局") != -1) {
-        obj.iconPath = "/img/youju.png";
-      } else if (cur.category.indexOf("中国电信营业厅") != -1) {
-        obj.iconPath = "/img/dianxin.png";
-      } else if (cur.category.indexOf("中国移动营业厅") != -1) {
-        obj.iconPath = "/img/dianxin.png";
-      } else if (cur.category.indexOf("中国联通营业厅") != -1) {
-        obj.iconPath = "/img/liantong.png";
-      } else if (cur.category.indexOf("洗衣店") != -1) {
-        obj.iconPath = "/img/xiyi.png";
-      } else if (cur.category.indexOf("美容美发") != -1) {
-        obj.iconPath = "/img/meirong.png";
-      } else if (cur.category.indexOf("KTV") != -1) {
-        obj.iconPath = "/img/KTV.png";
-      } else if (cur.category.indexOf("酒吧") != -1) {
-        obj.iconPath = "/img/jiuba.png";
-      } else if (cur.category.indexOf("网吧") != -1) {
-        obj.iconPath = "/img/wangba.png";
-      } else if (cur.category.indexOf("加油站") != -1) {
-        obj.iconPath = "/img/jiayouzhan.png";
-      } else if (cur.category.indexOf("洗车场") != -1) {
-        obj.iconPath = "/img/xiche.png";
-      } else if (cur.category.indexOf("博物馆") != -1) {
-        obj.iconPath = "/img/bowuguan.png";
-      } else if (cur.category.indexOf("科技馆") != -1) {
-        obj.iconPath = "/img/keji.png";
-      } else if (cur.category.indexOf("图书馆") != -1) {
-        obj.iconPath = "/img/tushu.png";
-      } else if (cur.category.indexOf("美术馆") != -1) {
-        obj.iconPath = "/img/meishu.png";
-      } else if (cur.category.indexOf("美术馆") != -1) {
-        obj.iconPath = "/img/meishu.png";
-      } else if (cur.category.indexOf("大学") != -1) {
-        obj.iconPath = "/img/daxue.png";
-      } else if (cur.category.indexOf("中学") != -1) {
-        obj.iconPath = "/img/zhongxue.png";
-      } else if (cur.category.indexOf("小学") != -1) {
-        obj.iconPath = "/img/xiaoxue.png";
-      } else if (cur.category.indexOf("中国银行") != -1) {
-        obj.iconPath = "/img/zhongguo.png";
-      } else if (cur.category.indexOf("建设银行") != -1) {
-        obj.iconPath = "/img/jianshe.png";
-      } else if (cur.category.indexOf("农业银行") != -1) {
-        obj.iconPath = "/img/nongye.png";
-      } else if (cur.category.indexOf("上海银行") != -1) {
-        obj.iconPath = "/img/shanghai.png";
-      } else if (cur.category.indexOf("住宅小区") != -1) {
-        obj.iconPath = "/img/xiaoqu.png";
-      } else if (cur.category.indexOf("别墅") != -1) {
-        obj.iconPath = "/img/bieshu.png";
-      } else if (cur.category.indexOf("服务区") != -1) {
-        obj.iconPath = "/img/fuwuqu.png";
-      } else if (cur.category.indexOf("公共厕所") != -1) {
-        obj.iconPath = "/img/gongce.png";
-      } else if (cur.category.indexOf("公用电话") != -1) {
-        obj.iconPath = "/img/gongyongdianhua.png";
-      } else if (cur.category.indexOf("公交车站") != -1) {
-        obj.iconPath = "/img/gongjiaochezhan.png";
-      } else if (cur.category.indexOf("地铁站") != -1) {
-        obj.iconPath = "/img/ditiezhan.png";
-      } else if (cur.category.indexOf("火车站") != -1) {
-        obj.iconPath = "/img/huochezhan.png";
-      } else if (cur.category.indexOf("长途汽车站") != -1) {
-        obj.iconPath = "/img/changtu.png";
-      } else if (cur.category.indexOf("药房药店") != -1) {
-        obj.iconPath = "/img/yaofang.png";
-      } else if (cur.category.indexOf("综合医院") != -1) {
-        obj.iconPath = "/img/yiyuan.png";
-      } else if (cur.category.indexOf("长途汽车站") != -1) {
-        obj.iconPath = "/img/changtu.png";
-      } else if (cur.category.indexOf("酒店宾馆") != -1) {
-        obj.iconPath = "/img/jiudian.png";
-      }
-
       markers.push(obj);
     }
     var curloc = wx.getStorageSync('curloc')
@@ -137,6 +101,7 @@ Page({
   markertap: function (e) {
     var idx = e.markerId;
     var obj = this.data.markers[idx];
+    console.log(obj);
     wx.openLocation({
       name: obj['title'],
       address: obj['address'],
