@@ -5,7 +5,7 @@
 * 团队成员： 阚自强、宋嘉欣、董春侠、马丁
 
 
-![小程序码](https://mapxcx.kanziqiang.top/img/10.jpeg) 
+![小程序码](https://mapxcx.kanziqiang.top/img/9.jpeg) 
 据说颜值高的都是路痴!
 =============
 
