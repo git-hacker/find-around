@@ -65,6 +65,7 @@ Page({
       "药房药店": "yaofang",
       "综合医院": "yiyuan",
       "长途汽车站": "changtu",
+      "wifi": "wifi",      
       "酒店宾馆": "jiudian"      
     };
     //循环取出符合map组件的marker数据
@@ -72,11 +73,7 @@ Page({
     for (var i in marker) {
       var cur = marker[i];
       var str = cur.category ? cur.category.split(":").pop() : "";
-      if (citysrc[str]) {
-        obj.iconPath = "/img/" + citysrc[str] + ".png";
-      } else {
-        obj.iconPath = "/img/8.png"; 
-      }
+      obj.iconPath = "/img/" + (citysrc[str] || "8") + ".png";
       obj = {
         id: i,
         latitude: cur.location.lat,

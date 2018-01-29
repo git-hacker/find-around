@@ -1,0 +1,22 @@
+/* pages/chat/chat.wxss */
+.myheader{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.tapicon{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+.realname{
+  margin-right: 20rpx;
+}
+.level{
+  display: inline-block;
+  padding: 5rpx 10rpx;
+  border: 1px solid #1AAD19;
+  color: #1AAD19;  
+  border-radius: 8rpx;
+}

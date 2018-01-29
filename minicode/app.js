@@ -84,8 +84,7 @@ App({
         if (resp.status == 1) {
           var info = res.data.arr;
           that.d.userId = info.ID;
-          that.d.NickName = info.NickName;
-          that.d.HeadUrl = info.HeadUrl;
+          that.d.userinfo = info
         } else {
           var err = res.data.err;
           wx.showModal({

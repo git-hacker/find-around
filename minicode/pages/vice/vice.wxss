@@ -1,6 +1,6 @@
 /* pages/vice/vice.wxss */
 .content{
-  padding: 0rpx 30rpx;
+  padding: 30rpx;
   font-size: 30rpx;
 }
 .areainput{
@@ -21,8 +21,11 @@
   z-index: 1000;
   /* padding:20rpx 0rpx; */
   border:1px solid #ddd;
-  height:400rpx;
+  height:420rpx;
   box-shadow:0rpx 2rpx 5rpx 5rpx rgba(0,0,0,0.1);
+}
+.areainput .context .scrollview{
+  height:350rpx;
 }
 .areainput image{
   width:50rpx;
@@ -53,7 +56,10 @@
   flex: 1;
 }
 .history{
-  height:300rpx;
+  height:250rpx;
+}
+.texcen{
+  text-align: center;
 }
 /* scroll-view{
   height: 300rpx;
@@ -93,14 +99,26 @@
   color: #fff;
 }
 .curarea{
-  float: right;
+  /* float: right; */
   color:#666;
+}
+.curimage{
+  width: 30rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  float: left;
+}
+.curraimg{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  float: left;
 }
 .colgreen{
   color: #1AAD19;
 }
 .lable{
-  padding: 40rpx 0rpx 30rpx;
+  padding: 20rpx 0rpx;
 }
 .clearimg{
   width: 40rpx;
@@ -122,11 +140,32 @@
   border-radius: 30rpx;
 }
 .index-sel{
-  margin-top:30rpx;
+  margin-top: 20rpx;
 }
 .index-sel image{
   margin-left:20rpx;
 }
 .index-sel image:first-child{
   margin-left:0;
+}
+.dismiss{
+  display: flex;
+}
+.flex1{
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: no-warp;
+}
+.ritext{
+  float:right;font-size:24rpx;
+}
+.areainput .context .close{
+  color: #000;
+}
+.argsnum{
+  width: 100rpx;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
 }

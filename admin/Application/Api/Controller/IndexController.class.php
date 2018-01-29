@@ -35,17 +35,23 @@ class IndexController extends Controller {
 		}elseif ($res1['status']==0 && $res1['count']>0) {
             if (!empty($has)) {
                 $res = $this -> history -> where('id='.$has[0]['id'])->setInc('num');
-            }else{
+            }else {
                 $res = $this -> history -> add( $data );
+            }
+            if ($has[0]['status'] == 9) {
+                $newdata['id'] = $has[0]['id'];
+                $newdata['status'] = 0;
+                $res = $this -> history -> save( $newdata );
             }
 		}
 		print json_encode($res1);
 	}
     //删除历史记录
     public function removehis(){
-        $data['uid'] = $_POST['uid'];
+        $where['uid'] = $_POST['uid'];
         $data['keyword'] = $this -> filter_mark($_POST['keyword']);
-        $res = $this -> history ->where($data)->delete();
+        $data['status'] = 9;
+        $res = $this -> history ->where($where)->save($data);
         if (!empty($res)) {
             apiResponse("success","删除成功！");
         }else{
@@ -89,11 +95,12 @@ class IndexController extends Controller {
 	//获取关键热门词和历史搜索记录
 	public function index(){
 		$where['uid'] = $_POST['uid'];
-		$res = $this -> history->field('keyword')->where($where)->order('ctime desc')->limit(10) -> select();
 		$sql = "SELECT `keyword`,SUM(`num`) AS num FROM `map_history` WHERE 1 GROUP BY (`keyword`) ORDER BY (`num`) DESC LIMIT 10";
 		$Model = new \Think\Model();
 		$res1 = $Model-> query( $sql );
-		if (!empty($res) && !empty($res1)) {
+        $where['status'] = array('neq','9');
+        $res = $this -> history->field('keyword')->where($where)->order('ctime desc')->limit(9) -> select();
+		if (!empty($res) || !empty($res1)) {
 			$data = array( $res,$res1 );
 			apiResponse("success","查询成功！",$data);
 		}else{

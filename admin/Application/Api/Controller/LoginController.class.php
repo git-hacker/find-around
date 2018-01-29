@@ -38,17 +38,21 @@ class LoginController extends Controller {
 		}
 		$con = array();
 		$con['openid']=trim($openid);
-		$uid = M('user')->where($con)->getField('id');
+		$userinfo = M('user')->where($con)->find();
+		$uid = $userinfo['id'];
 		if ($uid) {
-			$userinfo = M('user')->where('id='.intval($uid))->find();
-			if (intval($userinfo['del'])==1) {
-				echo json_encode(array('status'=>0,'err'=>'账号状态异常！'));
-				exit();
-			}
+			$save['num'] = $userinfo['num'] +1;
+			$save['utime'] = time();
+			$changenum = M('user')->where('id='.intval($uid))->save($save);
 			$err = array();
 			$err['ID'] = intval($uid);
-			$err['NickName'] = $_POST['NickName'];
-			$err['HeadUrl'] = $_POST['HeadUrl'];
+			$err['nickname'] = $userinfo['uname'];
+			$err['headurl'] = $userinfo['photo'];
+			$err['name'] = $userinfo['name'];
+			$err['sex'] = $userinfo['sex'];
+			$err['birth'] = $userinfo['birth'];
+			$err['tel'] = $userinfo['tel'];
+			$err['num'] = $userinfo['num'];
 			echo json_encode(array('status'=>1,'arr'=>$err));
 			exit();
 		}else{
@@ -61,6 +65,7 @@ class LoginController extends Controller {
 			$data['openid'] = $openid;
 			$data['source'] = 'wx';
 			$data['addtime'] = time();
+			$data['utime'] = time();
 			if (!$data['openid']) {
 				echo json_encode(array('status'=>0,'err'=>'授权失败！'.__LINE__));
 				exit();

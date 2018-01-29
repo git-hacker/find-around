@@ -1,0 +1,54 @@
+<view class="content">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">姓名：</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入姓名" bindinput='keyinput' value='{{name}}' />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">电话：</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入电话" bindinput='remarkinput' value='{{tel}}'/>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">出生日期：</view>
+      </view>
+      <view class="weui-cell__bd">
+        <view class="section">
+          <picker mode="date" value="{{birth || '2017-09-01'}}" bindchange="bindDateChange">
+            <view class="picker">
+              {{birth || '2017-09-01'}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">性别：</view>
+      </view>
+      <view class="weui-cell__bd">
+        <radio-group bindchange="radioChange" class="weui-input">
+          <label class="weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+            <radio value="{{item.value}}" checked="{{item.value == sex}}" />
+            <text class="weui-cell__bd">{{item.name}}</text>
+          </label>
+        </radio-group>
+      </view>
+    </view>
+  </view>
+  <view class="texccc">
+    填写真实信息，您将收到我们送出的专属生日小惊喜哦！
+    </view>
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" bindtap="showTopTips">确定</button>
+  </view>
+
+</view>

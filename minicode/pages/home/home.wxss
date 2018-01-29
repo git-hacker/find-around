@@ -1,0 +1,33 @@
+/* pages/home/home.wxss */
+.page{
+  background: #eeeeee;
+}
+.headimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 750rpx;
+  height: 300rpx;
+  background: #ffffff;
+  flex-direction: column;
+  position: relative;
+}
+.headimg image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.headimg .setinfo{
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.weui-cells{
+  margin-top: 40rpx;
+  background: #ffffff;
+}
+.weui-cell__ft{
+  font-size: 28rpx;
+}

@@ -1,0 +1,32 @@
+<view class="content">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">描述</view>
+      </view>
+      <view class="weui-cell__bd">
+        <textarea class='report' bindinput='remarkinput' placeholder='请输入您要反馈的信息！'></textarea>
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">截图</view>
+      </view>
+      <view class="weui-cell__bd">
+        <view class="imagearea" wx:for="{{imgUrls}}" wx:for-item="obj" wx:for-index="ind">
+          <image src="/img/clear.png" class="clear" bindtap='removeimg' data-index="{{ind}}"></image>
+          <image src='{{obj}}'></image>
+        </view>
+        <view class="uploadarea" bindtap='choseimg'>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" bindtap="showTopTips">提交</button>
+  </view>
+
+</view>

@@ -1,6 +1,11 @@
 {
   "pages":[
     "pages/vice/vice",
+    "pages/setinfo/setinfo",
+    
+    "pages/home/home",  
+    "pages/report/report",    
+    "pages/chat/chat",    
     "pages/map/map",
     "pages/addnew/addnew"
   ],
@@ -9,5 +14,24 @@
     "navigationBarBackgroundColor": "#1AAD19",
     "navigationBarTitleText": "Find周边",
     "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#bbb",
+    "selectedColor": "#1AAD19",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/vice/vice",
+        "text": "搜索服务",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/homeon.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "个人中心",
+        "iconPath": "img/self.png",
+        "selectedIconPath": "img/selfon.png"
+      }
+    ]
   }
 }

@@ -1,0 +1,12 @@
+/* pages/setinfo/setinfo.wxss */
+.section{
+  height:2.58823529em;
+  min-height:2.58823529em;
+  line-height:2.58823529em;
+}
+.texccc{
+  color: #cccccc;
+  padding: 20rpx;
+  font-size: 24rpx;
+  text-align: center;
+}

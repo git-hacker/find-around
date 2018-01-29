@@ -1,0 +1,44 @@
+<view class="page">
+  <view class="headimg">
+    <navigator url='/pages/setinfo/setinfo'>
+      <image src="/img/set_icon.png" class="setinfo"></image>
+    </navigator>
+    <view><image src="{{headurl}}"></image></view>
+    <view><text>{{nickname}}</text></view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+          </view>
+          <view class="weui-cell__bd">姓名</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access">{{name}}</view>
+      </view>
+      <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+          </view>
+          <view class="weui-cell__bd">性别</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access">{{sex==1 ? "男" : "女"}}</view>
+      </view>
+      <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+          </view>
+          <view class="weui-cell__bd">电话</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access">{{tel=="" ? "无" : tel}}</view>
+      </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+      <navigator url="/pages/report/report" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+            </view>
+            <view class="weui-cell__bd">反馈建议</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+      <navigator url="/pages/chat/chat" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+            </view>
+            <view class="weui-cell__bd">联系我们</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+  </view>
+</view>
