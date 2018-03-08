@@ -71,6 +71,6 @@
 
 ## 本地部署
 
-文章正在书写中预计3月底发布
+文章正在书写中预计3月底发布[链接](https://github.com/git-hacker/find-around/blob/master/dev.md)
 
 # wifi全国数据已接入
